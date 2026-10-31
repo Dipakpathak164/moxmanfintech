@@ -1,0 +1,645 @@
+<!-- DEBUG-VIEW START 3 APPPATH/Views/quote.php -->
+<!-- DEBUG-VIEW START 2 APPPATH/Views/layouts/main.php -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<script class="kint-rich-script">"use strict";(()=>{function m(n){if(!(n instanceof Element))throw new Error("Invalid argument to dedupeElement()");let t=n.ownerDocument,e=E(n);for(let s of t.querySelectorAll(e))n!==s&&s.parentNode.removeChild(s)}function d(n){return n instanceof Element?n.ownerDocument.contains(n):!1}function E(n){if(!(n instanceof Element))throw new Error("Invalid argument to buildClassSelector()");return[n.nodeName,...n.classList].join(".")}function f(n){if(!(n instanceof Element))throw new Error("Invalid argument to selectText()");let t=n.ownerDocument,e=t.getSelection(),s=t.createRange();s.selectNodeContents(n),e.removeAllRanges(),e.addRange(s)}function I(n,t){let e;return function(...s){clearTimeout(e),e=setTimeout(function(){n(...s)},t)}}function x(n){if(!(n instanceof Element))throw new Error("Invalid argument to offsetTop()");return n.offsetTop+(n.offsetParent?x(n.offsetParent):0)}var u=class n{static#e=new Set;static toggleSearchBox(t,e){let s=t.querySelector(".kint-search"),i=t.parentNode;if(s)if(s.classList.toggle("kint-show",e)){if(s.focus(),s.select(),!n.#e.has(s)){let r=i.querySelectorAll("dl").length,o=200;r>1e4&&(o=700),s.addEventListener("keyup",I(n.#t.bind(null,s),o)),n.#e.add(s)}n.#t(s)}else i.classList.remove("kint-search-root")}static#t(t){let e=t.closest(".kint-parent")?.parentNode;if(e)if(t.classList.contains("kint-show")&&t.value.length){let s=e.dataset.lastSearch;if(e.classList.add("kint-search-root"),s!==t.value){e.dataset.lastSearch=t.value,e.classList.remove("kint-search-match");for(let i of e.querySelectorAll(".kint-search-match"))i.classList.remove("kint-search-match");n.#s(e,t.value.toUpperCase())}}else e.classList.remove("kint-search-root")}static#s(t,e){let s=t.cloneNode(!0);for(let c of s.querySelectorAll(".access-path"))c.remove();if(!s.textContent.toUpperCase().includes(e))return;t.classList.add("kint-search-match");let i=t.firstElementChild;for(;i&&i.tagName!=="DT";)i=i.nextElementSibling;if(!i)return;let r=a.getChildContainer(i);if(!r)return;let o,l;for(let c of r.children)c.tagName==="DL"?n.#s(c,e):c.tagName==="UL"&&(c.classList.contains("kint-tabs")?o=c.children:c.classList.contains("kint-tab-contents")&&(l=c.children));if(!(!o||o.length!==l?.length))for(let c=o.length;c--;){let k=!1,F=!1;o[c].textContent.toUpperCase().includes(e)&&(k=!0);let O=l[c].cloneNode(!0);for(let v of O.querySelectorAll(".access-path"))v.remove();if(O.textContent.toUpperCase().includes(e)&&(k=!0,F=!0),k&&o[c].classList.add("kint-search-match"),F)for(let v of l[c].children)v.tagName==="DL"&&n.#s(v,e)}}};var g=class{static sort(t,e){let s=t.dataset.kintTableSort,i=parseInt(s)===e?-1:1,r=t.tBodies[0];[...r.rows].sort(function(o,l){o=o.cells[e].textContent.trim().toLocaleLowerCase(),l=l.cells[e].textContent.trim().toLocaleLowerCase();let c=0;return!isNaN(o)&&!isNaN(l)?(o=parseFloat(o),l=parseFloat(l),c=o-l):isNaN(o)&&!isNaN(l)?c=1:isNaN(l)&&!isNaN(o)?c=-1:c=(""+o).localeCompare(""+l),c*i}).forEach(o=>r.appendChild(o)),i<0?t.dataset.kintTableSort=null:t.dataset.kintTableSort=e}};var a=class n{#e;#t;#s;constructor(t){if(!(t instanceof h))throw new Error("Invalid argument to Rich.constructor()");this.#e=t,this.#e.runOnInit(this.#i.bind(this));let e=new q(this,t);new b(this,t.window,e)}#i(){let t=this.#e.window.document;if(d(this.#t)||(this.#t=t.querySelector("style.kint-rich-style")),this.#t&&m(this.#t),t.querySelector(".kint-rich.kint-file")){this.setupFolder(t);let e=this.#s.querySelector("dd.kint-foldout"),s=Array.from(t.querySelectorAll(".kint-rich.kint-file"));for(let i of s)i.parentNode!==e&&e.appendChild(i);this.#s.classList.add("kint-show")}}addToFolder(t){let e=t.closest(".kint-rich");if(!e)throw new Error("Bad addToFolder");let s=this.#e.window.document;if(this.setupFolder(s),this.folder.contains(t))throw new Error("Bad addToFolder");let i=this.#s.querySelector("dd.kint-foldout"),r=t.closest(".kint-parent, .kint-rich"),o=Array.from(e.querySelectorAll(".kint-folder-trigger"));if(e===r||e.querySelectorAll(".kint-rich > dl").length===1){for(let l of o)l.remove();e.classList.add("kint-file"),i.insertBefore(e,i.firstChild)}else{let l=s.createElement("div");l.classList.add("kint-rich"),l.classList.add("kint-file"),l.appendChild(r.closest(".kint-rich > dl"));let c=e.lastElementChild;c.matches(".kint-rich > footer")&&l.appendChild(c.cloneNode(!0));for(let k of o)k.remove();i.insertBefore(l,i.firstChild)}n.toggle(this.#s.querySelector(".kint-parent"),!0)}setupFolder(t){if(this.#s)d(this.#s)||(this.#s=t.querySelector(".kint-rich.kint-folder"));else{let e=t.createElement("template");e.innerHTML='<div class="kint-rich kint-folder"><dl><dt class="kint-parent"><nav></nav>Kint</dt><dd class="kint-foldout"></dd></dl></div>',this.#s=e.content.firstChild,t.body.appendChild(this.#s)}}get folder(){return d(this.#s)||(this.#s=this.#e.window.document.querySelector(".kint-rich.kint-folder")),this.#s&&m(this.#s),this.#s}isFolderOpen(){let t=this.#s?.querySelector("dd.kint-foldout");if(t)return t.previousSibling.classList.contains("kint-show")}static getChildContainer(t){let e=t.nextElementSibling;for(;e&&!e.matches("dd");)e=e.nextElementSibling;return e}static toggle(t,e){let s=n.getChildContainer(t);s&&(e=t.classList.toggle("kint-show",e),n.#n(s,e))}static switchTab(t){t.parentNode.getElementsByClassName("kint-active-tab")[0].classList.remove("kint-active-tab"),t.classList.add("kint-active-tab");let e=t,s=0;for(;e=e.previousElementSibling;)s++;let i=t.parentNode.nextSibling.children;for(let r=i.length;r--;)r===s?(i[r].classList.add("kint-show"),n.#n(i[r],!0)):i[r].classList.remove("kint-show")}static toggleChildren(t,e){let s=n.getChildContainer(t);if(!s)return;e===void 0&&(e=t.classList.contains("kint-show"));let i=Array.from(s.getElementsByClassName("kint-parent"));for(let r of i)r.classList.toggle("kint-show",e)}static toggleAccessPath(t,e){let s=t.querySelector(".access-path");s?.classList.toggle("kint-show",e)&&f(s)}static#n(t,e){if(t.children.length===2&&t.lastElementChild.matches("ul.kint-tab-contents"))for(let s of t.lastElementChild.children)s.matches("li.kint-show")&&(t=s);if(t.children.length===1&&t.firstElementChild.matches("dl")){let s=t.firstElementChild.firstElementChild;s?.classList?.contains("kint-parent")&&n.toggle(s,e)}}},b=class{#e;#t;#s;#i=null;#n=null;#o=0;constructor(t,e,s){this.#e=t,this.#t=s,this.#s=e,this.#s.addEventListener("click",this.#a.bind(this),!0)}#r(){clearTimeout(this.#i),this.#i=setTimeout(this.#l.bind(this),250)}#l(){clearTimeout(this.#i),this.#i=null,this.#n=null,this.#o=0}#c(){let t=this.#n;if(!t.matches(".kint-parent > nav"))return;let e=t.parentNode;if(this.#o===1)a.toggleChildren(e),this.#t.onTreeChanged(),this.#r(),this.#o=2;else if(this.#o===2){this.#l();let s=e.classList.contains("kint-show"),i=this.#e.folder?.querySelector(".kint-parent"),r=Array.from(this.#s.document.getElementsByClassName("kint-parent"));for(let o of r)o!==i&&o.classList.toggle("kint-show",s);this.#t.onTreeChanged(),this.#t.scrollToFocus()}}#a(t){if(this.#o){this.#c();return}let e=t.target;if(!e.closest(".kint-rich"))return;if(e.tagName==="DFN"&&f(e),e.tagName==="TH"){t.ctrlKey||g.sort(e.closest("table"),e.cellIndex);return}if(e.tagName==="LI"&&e.parentNode.className==="kint-tabs"){if(e.className!=="kint-active-tab"){let i=e.closest("dl")?.querySelector(".kint-parent > nav")??e;a.switchTab(e),this.#t.onTreeChanged(),this.#t.setCursor(i)}return}let s=e.closest("dt");if(e.tagName==="NAV")e.parentNode.tagName==="FOOTER"?(this.#t.setCursor(e),e.parentNode.classList.toggle("kint-show")):s?.classList.contains("kint-parent")&&(a.toggle(s),this.#t.onTreeChanged(),this.#t.setCursor(e),this.#r(),this.#o=1,this.#n=e);else if(e.classList.contains("kint-access-path-trigger"))s&&a.toggleAccessPath(s);else if(e.classList.contains("kint-search-trigger"))s?.matches(".kint-rich > dl > dt.kint-parent")&&u.toggleSearchBox(s);else if(e.classList.contains("kint-folder-trigger")){if(s?.matches(".kint-rich > dl > dt.kint-parent"))this.#e.addToFolder(e),this.#t.onTreeChanged(),this.#t.setCursor(s.querySelector("nav")),this.#t.scrollToFocus();else if(e.parentNode.tagName==="FOOTER"){let i=e.closest(".kint-rich").querySelector(".kint-parent > nav, .kint-rich > footer > nav");this.#e.addToFolder(e),this.#t.onTreeChanged(),this.#t.setCursor(i),this.#t.scrollToFocus()}}else e.classList.contains("kint-search")||(e.tagName==="PRE"&&t.detail===3?f(e):e.closest(".kint-source")&&t.detail===3?f(e.closest(".kint-source")):e.classList.contains("access-path")?f(e):e.tagName!=="A"&&s?.classList.contains("kint-parent")&&(a.toggle(s),this.#t.onTreeChanged(),this.#t.setCursor(s.querySelector("nav"))))}},j=65,G=68,A=70,S=72,K=74,D=75,p=76,V=83,P=9,T=13,B=27,L=32,N=37,R=38,C=39,H=40,M=".kint-rich .kint-parent > nav, .kint-rich > footer > nav, .kint-rich .kint-tabs > li:not(.kint-active-tab)",q=class{#e=[];#t=0;#s=!1;#i;#n;constructor(t,e){this.#i=t,this.#n=e.window,this.#n.addEventListener("keydown",this.#c.bind(this),!0),e.runOnInit(this.onTreeChanged.bind(this))}scrollToFocus(){let t=this.#e[this.#t];if(!t)return;let e=this.#i.folder;if(t===e?.querySelector(".kint-parent > nav"))return;let s=x(t);if(this.#i.isFolderOpen()){let i=e.querySelector("dd.kint-foldout");i.scrollTo(0,s-i.clientHeight/2)}else this.#n.scrollTo(0,s-this.#n.innerHeight/2)}onTreeChanged(){let t=this.#e[this.#t];this.#e=[];let e=this.#i.folder,s=e?.querySelector(".kint-parent > nav"),i=this.#n.document;this.#i.isFolderOpen()&&(i=e,this.#e.push(s));let r=Array.from(i.querySelectorAll(M));for(let o of r)o.offsetParent!==null&&o!==s&&this.#e.push(o);if(s&&!this.#i.isFolderOpen()&&this.#e.push(s),this.#e.length===0){this.#s=!1,this.#r();return}t&&this.#e.indexOf(t)!==-1?this.#t=this.#e.indexOf(t):this.#r()}setCursor(t){if(this.#i.isFolderOpen()&&!this.#i.folder.contains(t)||!t.matches(M))return!1;let e=this.#e.indexOf(t);if(e===-1&&(this.onTreeChanged(),e=this.#e.indexOf(t)),e!==-1){if(e!==this.#t)return this.#t=e,this.#r(),!0;this.#e[e]?.classList.remove("kint-weak-focus")}else console.error("setCursor failed to find target in list",t),console.info("Please report this as a bug in Kint at https://github.com/kint-php/kint");return!1}#o(t){if(this.#e.length===0)return this.#t=0,null;for(this.#t+=t;this.#t<0;)this.#t+=this.#e.length;for(;this.#t>=this.#e.length;)this.#t-=this.#e.length;return this.#r(),this.#t}#r(){let t=this.#n.document.querySelector(".kint-focused");t&&(t.classList.remove("kint-focused"),t.classList.remove("kint-weak-focus")),this.#s&&this.#e[this.#t]?.classList.add("kint-focused")}#l(t){let e=t.closest(".kint-rich .kint-parent ~ dd")?.parentNode.querySelector(".kint-parent > nav");e&&(this.setCursor(e),this.scrollToFocus())}#c(t){if(t.keyCode===B&&t.target.matches(".kint-search")){t.target.blur(),this.#s&&this.#r();return}if(t.target!==this.#n.document.body||t.altKey||t.ctrlKey)return;if(t.keyCode===G){if(this.#s)this.#s=!1;else{if(this.#s=!0,this.onTreeChanged(),this.#e.length===0){this.#s=!1;return}this.scrollToFocus()}this.#r(),t.preventDefault();return}else if(t.keyCode===B){this.#s&&(this.#s=!1,this.#r(),t.preventDefault());return}else if(!this.#s)return;t.preventDefault(),d(this.#e[this.#t])||this.onTreeChanged();let e=this.#e[this.#t];if([P,R,D,H,K].includes(t.keyCode)){t.keyCode===P?this.#o(t.shiftKey?-1:1):t.keyCode===R||t.keyCode===D?this.#o(-1):(t.keyCode===H||t.keyCode===K)&&this.#o(1),this.scrollToFocus();return}if(e.tagName==="LI"&&[L,T,C,p,N,S].includes(t.keyCode)){t.keyCode===L||t.keyCode===T?(a.switchTab(e),this.onTreeChanged()):t.keyCode===C||t.keyCode===p?this.#o(1):(t.keyCode===N||t.keyCode===S)&&this.#o(-1),this.scrollToFocus();return}if(e.parentNode.tagName==="FOOTER"&&e.closest(".kint-rich")){if(t.keyCode===L||t.keyCode===T)e.parentNode.classList.toggle("kint-show");else if(t.keyCode===N||t.keyCode===S)if(e.parentNode.classList.contains("kint-show"))e.parentNode.classList.remove("kint-show");else{this.#l(e.closest(".kint-rich"));return}else if(t.keyCode===C||t.keyCode===p)e.parentNode.classList.add("kint-show");else if(t.keyCode===A&&!this.#i.isFolderOpen()&&e.matches(".kint-rich > footer > nav")){let i=e.closest(".kint-rich").querySelector(".kint-parent > nav, .kint-rich > footer > nav");this.#i.addToFolder(e),this.onTreeChanged(),this.setCursor(i),this.scrollToFocus()}return}let s=e.closest(".kint-parent");if(s){if(t.keyCode===j){a.toggleAccessPath(s);return}if(t.keyCode===A){!this.#i.isFolderOpen()&&s.matches(".kint-rich:not(.kint-folder) > dl > .kint-parent")&&(this.#i.addToFolder(e),this.onTreeChanged(),this.setCursor(e),this.scrollToFocus());return}if(t.keyCode===V){let i=s.closest(".kint-rich > dl")?.querySelector(".kint-search")?.closest(".kint-parent");if(i){e.classList.add("kint-weak-focus"),u.toggleSearchBox(i,!0);return}}if(t.keyCode===L||t.keyCode===T){a.toggle(s),this.onTreeChanged();return}if([C,p,N,S].includes(t.keyCode)){let i=s.classList.contains("kint-show");if(t.keyCode===C||t.keyCode===p){i&&a.toggleChildren(s,!0),a.toggle(s,!0),this.onTreeChanged();return}else if(i){a.toggleChildren(s,!1),a.toggle(s,!1),this.onTreeChanged();return}else{this.#l(s);return}}}}};var y=class{#e;#t;constructor(t){if(!(t instanceof h))throw new Error("Invalid argument to Plain.constructor()");this.#e=t.window,t.runOnInit(this.#s.bind(this))}#s(){d(this.#t)||(this.#t=this.#e.document.querySelector("style.kint-plain-style")),this.#t&&m(this.#t)}};var w=class{#e;constructor(t){if(!(t instanceof h))throw new Error("Invalid argument to Microtime.constructor()");this.#e=t.window,t.runOnInit(this.#t.bind(this))}#t(){let t={},e=this.#e.document.querySelectorAll("[data-kint-microtime-group]");for(let s of e){let i=s.querySelector(".kint-microtime-lap");if(!i)continue;let r=s.dataset.kintMicrotimeGroup,o=parseFloat(i.textContent),l=parseFloat(s.querySelector(".kint-microtime-avg").textContent);t[r]??={min:o,max:o,avg:l},t[r].min>o&&(t[r].min=o),t[r].max<o&&(t[r].max=o),t[r].avg=l}for(let s of e){let i=s.querySelector(".kint-microtime-lap");if(!i)continue;let r=parseFloat(i.textContent),o=t[s.dataset.kintMicrotimeGroup];if(s.querySelector(".kint-microtime-avg").textContent=o.avg,!(r===o.min&&r===o.max))if(s.classList.add("kint-microtime-js"),r>o.avg){let l=(r-o.avg)/(o.max-o.avg);i.style.background="hsl("+(40-40*l)+", 100%, 65%)"}else{let l=0;o.avg!==o.min&&(l=(o.avg-r)/(o.avg-o.min)),i.style.background="hsl("+(40+80*l)+", 100%, 65%)"}}}};var U=Symbol(),h=class n{static#e=null;#t;#s=[];#i=new Set;static init(t){return n.#e??=new n(t,U),n.#e.#n(),n.#e.runOnLoad(n.#r),n.#e}get window(){return this.#t}constructor(t,e){if(U!==e)throw new Error("Kint constructor is private. Use Kint.init()");if(!(t instanceof Window))throw new Error("Invalid argument to Kint.init()");this.#t=t,this.runOnInit(this.#o.bind(this)),new y(this),new a(this),new w(this)}runOnLoad(t){if(this.#t.document.readyState==="complete")try{t()}catch{}else this.#t.addEventListener("load",t)}runOnInit(t){this.#s.push(t)}#n(){this.#t.document.currentScript&&(this.#i.add(E(window.document.currentScript)),window.document.currentScript.remove())}#o(){for(let t of this.#i.keys())for(let e of this.#t.document.querySelectorAll(t))e.remove()}static#r(){for(let t of n.#e.#s)t()}};window.Kint||(window.Kint=h);window.Kint.init(window);})();
+</script><style class="kint-rich-style">.kint-rich{--spacing: 4px;--nav-size: 15px;--backdrop-color: rgba(255, 255, 255, 0.9);--main-background: #e0eaef;--secondary-background: #c1d4df;--text-color: #1d1e1e;--variable-name-color: #1d1e1e;--variable-type-color: #0092db;--variable-type-color-hover: #5cb730;--border-color: #b6cedb;--border-color-hover: #0092db;--border: 1px solid var(--border-color);--foldout-max-size: calc(100vh - 100px);--foldout-zindex: 999999;--caret-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 150'><g stroke-width='2' fill='%23FFF'><path d='M1 1h28v28H1zm5 14h18m-9 9V6M1 61h28v28H1zm5 14h18' stroke='%23379'/><path d='M1 31h28v28H1zm5 14h18m-9 9V36M1 91h28v28H1zm5 14h18' stroke='%235A3'/><path d='M1 121h28v28H1zm5 5l18 18m-18 0l18-18' stroke='%23CCC'/></g></svg>");--ap-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><g stroke='%23000' fill='transparent'><path d='M2 8h3m3 3v3M8 2v3m3 3h3M3 8' stroke-width='2' stroke-linecap='round'/><circle stroke-width='1.5' r='4.5' cx='8' cy='8'/></g></svg>");--folder-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M2 2h4l2 2h6v9H2V2h2' stroke-width='2' stroke='%23000' fill='transparent' stroke-linejoin='round'/></svg>");--search-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><g stroke='%23000' fill='transparent'><path d='M2 14l3-3' stroke-linecap='round' stroke-width='3'/><circle stroke-width='2' r='5' cx='9' cy='7'/></g></svg>");font-size:13px;overflow-x:auto;white-space:nowrap;background:var(--backdrop-color);direction:ltr;contain:content}.kint-rich.kint-folder{position:fixed;bottom:0;left:0;right:0;z-index:var(--foldout-zindex);width:100%;margin:0;display:block}.kint-rich.kint-folder dd.kint-foldout{max-height:var(--foldout-max-size);padding-right:calc(var(--spacing)*2);overflow-y:scroll;display:none}.kint-rich.kint-folder dd.kint-foldout.kint-show{display:block}.kint-rich::selection{background:var(--border-color-hover);color:var(--text-color)}.kint-rich .kint-focused{box-shadow:0 0 3px 3px var(--variable-type-color-hover)}.kint-rich .kint-focused.kint-weak-focus{box-shadow:0 0 3px 1px color-mix(in srgb, var(--variable-type-color-hover) 50%, transparent)}.kint-rich,.kint-rich::before,.kint-rich::after,.kint-rich *,.kint-rich *::before,.kint-rich *::after{box-sizing:border-box;border-radius:0;color:var(--text-color);float:none !important;font-family:Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;line-height:15px;margin:0;padding:0;text-align:left}.kint-rich{margin:calc(var(--spacing)*2) 0}.kint-rich dt,.kint-rich dl{width:auto}.kint-rich dt,.kint-rich div.access-path{background:var(--main-background);border:var(--border);color:var(--text-color);display:block;font-weight:bold;list-style:none outside none;overflow:auto;padding:var(--spacing)}.kint-rich dt:hover,.kint-rich div.access-path:hover{border-color:var(--border-color-hover)}.kint-rich>dl dl{padding:0 0 0 calc(var(--spacing)*3)}.kint-rich dt.kint-parent>nav,.kint-rich>footer>nav{background:var(--caret-image) no-repeat scroll 0 0/var(--nav-size) 75px rgba(0,0,0,0);cursor:pointer;display:inline-block;height:var(--nav-size);width:var(--nav-size);margin-right:3px;vertical-align:middle}.kint-rich dt.kint-parent:hover>nav,.kint-rich>footer>nav:hover{background-position:0 25%}.kint-rich dt.kint-parent.kint-show>nav,.kint-rich>footer.kint-show>nav{background-position:0 50%}.kint-rich dt.kint-parent.kint-show:hover>nav,.kint-rich>footer.kint-show>nav:hover{background-position:0 75%}.kint-rich dt.kint-parent.kint-locked>nav{background-position:0 100%}.kint-rich dt.kint-parent+dd{display:none;border-left:1px dashed var(--border-color);contain:strict}.kint-rich dt.kint-parent.kint-show+dd{display:block;contain:content}.kint-rich var,.kint-rich var a{color:var(--variable-type-color);font-style:normal}.kint-rich dt:hover var,.kint-rich dt:hover var a{color:var(--variable-type-color-hover)}.kint-rich dfn{font-style:normal;font-family:monospace;color:var(--variable-name-color)}.kint-rich pre{color:var(--text-color);margin:0 0 0 calc(var(--spacing)*3);padding:5px;overflow-y:hidden;border-top:0;border:var(--border);background:var(--main-background);display:block;word-break:normal}.kint-rich .kint-access-path-trigger,.kint-rich .kint-folder-trigger,.kint-rich .kint-search-trigger{background:color-mix(in srgb, var(--text-color) 80%, transparent);border-radius:3px;padding:2px;height:var(--nav-size);width:var(--nav-size);font-size:var(--nav-size);margin-left:5px;font-weight:bold;text-align:center;line-height:1;float:right !important;cursor:pointer;position:relative;overflow:hidden}.kint-rich .kint-access-path-trigger::before,.kint-rich .kint-folder-trigger::before,.kint-rich .kint-search-trigger::before{display:block;content:"";width:100%;height:100%;background:var(--main-background);mask:center/contain no-repeat alpha}.kint-rich .kint-access-path-trigger:hover,.kint-rich .kint-folder-trigger:hover,.kint-rich .kint-search-trigger:hover{background:var(--main-background)}.kint-rich .kint-access-path-trigger:hover::before,.kint-rich .kint-folder-trigger:hover::before,.kint-rich .kint-search-trigger:hover::before{background:var(--text-color)}.kint-rich .kint-access-path-trigger::before{mask-image:var(--ap-image)}.kint-rich .kint-folder-trigger::before{mask-image:var(--folder-image)}.kint-rich .kint-search-trigger::before{mask-image:var(--search-image)}.kint-rich input.kint-search{display:none;border:var(--border);border-top-width:0;border-bottom-width:0;padding:var(--spacing);float:right !important;margin:calc(var(--spacing)*-1) 0;color:var(--variable-name-color);background:var(--secondary-background);height:calc(var(--nav-size) + var(--spacing)*2);width:calc(var(--nav-size)*10);position:relative;z-index:100}.kint-rich input.kint-search.kint-show{display:block}.kint-rich .kint-search-root ul.kint-tabs>li:not(.kint-search-match){background:var(--secondary-background);filter:saturate(0);opacity:.5}.kint-rich .kint-search-root dl:not(.kint-search-match){opacity:.5}.kint-rich .kint-search-root dl:not(.kint-search-match)>dt{background:var(--main-background);filter:saturate(0)}.kint-rich .kint-search-root dl:not(.kint-search-match) dl,.kint-rich .kint-search-root dl:not(.kint-search-match) ul.kint-tabs>li:not(.kint-search-match){opacity:1}.kint-rich div.access-path{background:var(--secondary-background);display:none;margin-top:5px;padding:4px;white-space:pre}.kint-rich div.access-path.kint-show{display:block}.kint-rich footer{padding:0 3px 3px;font-size:9px;background:rgba(0,0,0,0)}.kint-rich footer>.kint-folder-trigger{background:rgba(0,0,0,0)}.kint-rich footer>.kint-folder-trigger::before{background:var(--text-color)}.kint-rich footer nav{height:10px;width:10px;background-size:10px 50px}.kint-rich footer>ol{display:none;margin-left:32px}.kint-rich footer.kint-show>ol{display:block}.kint-rich a{color:var(--text-color);text-shadow:none;text-decoration:underline}.kint-rich a:hover{color:var(--variable-name-color);border-bottom:1px dotted var(--variable-name-color)}.kint-rich ul{list-style:none;padding-left:calc(var(--spacing)*3)}.kint-rich ul:not(.kint-tabs) li{border-left:1px dashed var(--border-color)}.kint-rich ul:not(.kint-tabs) li>dl{border-left:none}.kint-rich ul.kint-tabs{margin:0 0 0 calc(var(--spacing)*3);padding-left:0;background:var(--main-background);border:var(--border);border-top:0}.kint-rich ul.kint-tabs>li{background:var(--secondary-background);border:var(--border);cursor:pointer;display:inline-block;height:calc(var(--spacing)*6);margin:calc(var(--spacing)/2);padding:0 calc(2px + var(--spacing)*2.5);vertical-align:top}.kint-rich ul.kint-tabs>li:hover,.kint-rich ul.kint-tabs>li.kint-active-tab:hover{border-color:var(--border-color-hover);color:var(--variable-type-color-hover)}.kint-rich ul.kint-tabs>li.kint-active-tab{background:var(--main-background);border-top:0;margin-top:-1px;height:27px;line-height:24px}.kint-rich ul.kint-tabs>li:not(.kint-active-tab){line-height:calc(var(--spacing)*5)}.kint-rich ul.kint-tabs li+li{margin-left:0}.kint-rich ul.kint-tab-contents>li{display:none;contain:strict}.kint-rich ul.kint-tab-contents>li.kint-show{display:block;contain:content}.kint-rich dt:hover+dd>ul>li.kint-active-tab{border-color:var(--border-color-hover);color:var(--variable-type-color-hover)}.kint-rich dt>.kint-color-preview{width:var(--nav-size);height:var(--nav-size);display:inline-block;vertical-align:middle;margin-left:10px;border:var(--border);background-color:#ccc;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="%23FFF" d="M0 0h1v2h1V1H0z"/></svg>');background-size:min(20px,100%)}.kint-rich dt>.kint-color-preview:hover{border-color:var(--border-color-hover)}.kint-rich dt>.kint-color-preview>div{width:100%;height:100%}.kint-rich table{border-collapse:collapse;empty-cells:show;border-spacing:0}.kint-rich table *{font-size:12px}.kint-rich table dt{background:none;padding:calc(var(--spacing)/2)}.kint-rich table dt .kint-parent{min-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.kint-rich table td,.kint-rich table th{border:var(--border);padding:calc(var(--spacing)/2);vertical-align:center}.kint-rich table th{cursor:alias}.kint-rich table td:first-child,.kint-rich table th{font-weight:bold;background:var(--secondary-background);color:var(--variable-name-color)}.kint-rich table td{background:var(--main-background);white-space:pre}.kint-rich table td>dl{padding:0}.kint-rich table pre{border-top:0;border-right:0}.kint-rich table thead th:first-child{background:none;border:0}.kint-rich table tr:hover>td{box-shadow:0 0 1px 0 var(--border-color-hover) inset}.kint-rich table tr:hover var{color:var(--variable-type-color-hover)}.kint-rich table ul.kint-tabs li.kint-active-tab{height:20px;line-height:17px}.kint-rich pre.kint-source{margin-left:-1px}.kint-rich pre.kint-source[data-kint-filename]:before{display:block;content:attr(data-kint-filename);margin-bottom:var(--spacing);padding-bottom:var(--spacing);border-bottom:1px solid var(--secondary-background)}.kint-rich pre.kint-source>div:before{display:inline-block;content:counter(kint-l);counter-increment:kint-l;border-right:1px solid var(--border-color-hover);padding-right:calc(var(--spacing)*2);margin-right:calc(var(--spacing)*2)}.kint-rich pre.kint-source>div.kint-highlight{background:var(--secondary-background)}.kint-rich .kint-microtime-js .kint-microtime-lap{text-shadow:-1px 0 var(--border-color-hover),0 1px var(--border-color-hover),1px 0 var(--border-color-hover),0 -1px var(--border-color-hover);color:var(--main-background);font-weight:bold}.kint-rich{--main-background: #f8f8f8;--secondary-background: #f8f8f8;--variable-type-color: #06f;--variable-type-color-hover: #f00;--border-color: #d7d7d7;--border-color-hover: #aaa;--alternative-background: #fff;--highlight-color: #cfc;--caret-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 150'><path d='M6 7h18l-9 15zm0 30h18l-9 15zm0 45h18l-9-15zm0 30h18l-9-15zm0 12l18 18m-18 0l18-18' fill='%23555'/><path d='M6 126l18 18m-18 0l18-18' stroke-width='2' stroke='%23555'/></svg>")}.kint-rich .kint-focused{box-shadow:0 0 3px 2px var(--variable-type-color-hover)}.kint-rich dt{font-weight:normal}.kint-rich dt.kint-parent{margin-top:4px}.kint-rich dl dl{margin-top:4px;padding-left:25px;border-left:none}.kint-rich>dl>dt{background:var(--secondary-background)}.kint-rich ul{margin:0;padding-left:0}.kint-rich ul:not(.kint-tabs)>li{border-left:0}.kint-rich ul.kint-tabs{background:var(--secondary-background);border:var(--border);border-width:0 1px 1px 1px;padding:4px 0 0 12px;margin-left:-1px;margin-top:-1px}.kint-rich ul.kint-tabs li,.kint-rich ul.kint-tabs li+li{margin:0 0 0 4px}.kint-rich ul.kint-tabs li{border-bottom-width:0;height:calc(var(--spacing)*6 + 1px)}.kint-rich ul.kint-tabs li:first-child{margin-left:0}.kint-rich ul.kint-tabs li.kint-active-tab{border-top:var(--border);background:var(--alternative-background);font-weight:bold;padding-top:0;border-bottom:1px solid var(--alternative-background) !important;margin-bottom:-1px}.kint-rich ul.kint-tabs li.kint-active-tab:hover{border-bottom:1px solid var(--alternative-background)}.kint-rich ul>li>pre{border:var(--border)}.kint-rich dt:hover+dd>ul{border-color:var(--border-color-hover)}.kint-rich pre{background:var(--alternative-background);margin-top:4px;margin-left:25px}.kint-rich .kint-source{margin-left:-1px}.kint-rich .kint-source .kint-highlight{background:var(--highlight-color)}.kint-rich .kint-parent.kint-show>.kint-search{border-bottom-width:1px}.kint-rich table td{background:var(--alternative-background)}.kint-rich table td>dl{padding:0;margin:0}.kint-rich table td>dl>dt.kint-parent{margin:0}.kint-rich table td:first-child,.kint-rich table td,.kint-rich table th{padding:2px 4px}.kint-rich table dd,.kint-rich table dt{background:var(--alternative-background)}.kint-rich table tr:hover>td{box-shadow:none;background:var(--highlight-color)}
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Get a Custom Group Health Insurance Quote | Moxman Fintech</title>
+    <meta name="description" content="Request a tailored group health insurance and employee benefits quote for your team. Cashless hospital network, dedicated claims specialist, and digital employee cards.">
+    <meta name="author" content="Moxman Fintech">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="./">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="./">
+    <meta property="og:title" content="Get a Custom Group Health Insurance Quote | Moxman Fintech">
+    <meta property="og:description" content="Request a tailored group health insurance and employee benefits quote for your team. Cashless hospital network, dedicated claims specialist, and digital employee cards.">
+    <meta property="og:image" content="../assets/images/brand/logo.png">
+    <meta property="og:site_name" content="Moxman Fintech">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:image:alt" content="Moxman Fintech group health insurance and employee benefits platform">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="./">
+    <meta name="twitter:title" content="Get a Custom Group Health Insurance Quote | Moxman Fintech">
+    <meta name="twitter:description" content="Request a tailored group health insurance and employee benefits quote for your team. Cashless hospital network, dedicated claims specialist, and digital employee cards.">
+    <meta name="twitter:image" content="../assets/images/brand/logo.png">
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <meta name="theme-color" content="#212c65">
+
+    <!-- Preload Critical Fonts & LCP Logo Asset -->
+    <link rel="preload" href="../assets/fonts/outfit-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/plusjakartasans-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/images/brand/logo.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="prefetch" href="../assets/images/brand/moxman-logo.webp" as="image" type="image/webp">
+
+    <!-- Google Fonts: Editorial Serif (Playfair Display) for Tailored Solutions & Display Headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- Compiled Minified Tailwind & Design System CSS -->
+    <link rel="stylesheet" href="../assets/css/main.min.css">
+
+    <!-- Progressive Enhancement Detection Script (Inline, non-blocking) -->
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- JSON-LD Structured Data: Organization + website context -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "../#organization",
+            "name": "Moxman Fintech",
+            "url": "../",
+            "logo": "../assets/images/brand/logo.png",
+            "description": "Group health insurance and employee benefits for Indian employers.",
+            "areaServed": {
+                "@type": "Country",
+                "name": "India"
+            },
+            "knowsLanguage": [
+                "English",
+                "Hindi"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "../#website",
+            "url": "../",
+            "name": "Moxman Fintech",
+            "publisher": {
+                "@id": "../#organization"
+            },
+            "inLanguage": "en-IN"
+        }
+    ]
+}    </script>
+</head>
+<body class="bg-surface text-neutral-800 font-body antialiased selection:bg-primary-900 selection:text-white flex flex-col min-h-screen">
+    <!-- Skip to main content link for accessibility -->
+    <a href="../#mainContent" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-900 focus:text-white focus:rounded-md">
+        Skip to main content
+    </a>
+
+    <!-- Shared Header Partial -->
+    
+    <!-- Main Page Content Section -->
+    <main id="mainContent" class="flex-grow">
+        <!-- =========================================================================
+     DEDICATED GET A QUOTE LANDING PAGE
+     Focused, conversion-oriented view without navigation distractions.
+     Parallax ambient layers, transparent reassurance points, and accessible form.
+     ========================================================================= -->
+<section id="quoteSection" class="quote-page-section relative overflow-hidden min-h-[calc(100vh-80px)] flex flex-col justify-between">
+
+    <!-- Top Branded Bar (No menu, crisp white logo presence linked to home) -->
+    <header class="w-full relative z-20 pt-5 sm:pt-6 pb-2">
+        <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <a href="../" class="flex items-center gap-2 flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 rounded-btn" aria-label="Moxman Fintech Home">
+                <picture>
+                    <source srcset="../assets/images/brand/logo.webp" type="image/webp">
+                    <img 
+                        src="../assets/images/brand/logo.png" 
+                        alt="Moxman Fintech - Group Health Insurance & Employee Benefits" 
+                        width="218" 
+                        height="46" 
+                        class="h-7 sm:h-8 md:h-8.5 w-auto object-contain brightness-0 invert opacity-95 hover:opacity-100 transition-opacity"
+                        fetchpriority="high"
+                    >
+                </picture>
+            </a>
+
+            <a href="../" class="inline-flex items-center gap-2 text-caption sm:text-body-sm font-display font-medium text-quote-lavender hover:text-white transition-colors py-1.5 px-3 rounded-btn bg-white/10 hover:bg-white/15 border border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white" aria-label="Back to Moxman homepage">
+                <svg class="w-4 h-4 text-white/90" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                <span>Back to home</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Parallax Ambient Decorative Background Orbs (GSAP-driven drift) -->
+    <div class="quote-parallax-orb quote-parallax-orb-1 pointer-events-none absolute -top-20 -right-20 sm:-right-28 w-80 sm:w-96 lg:w-[34rem] h-80 sm:h-96 lg:h-[34rem] rounded-full blur-3xl opacity-35 z-0" data-parallax-speed="-0.18" aria-hidden="true"></div>
+    <div class="quote-parallax-orb quote-parallax-orb-2 pointer-events-none absolute top-1/3 -left-24 sm:-left-36 w-72 sm:w-96 lg:w-[32rem] h-72 sm:h-96 lg:h-[32rem] rounded-full blur-3xl opacity-25 z-0" data-parallax-speed="0.22" aria-hidden="true"></div>
+    <div class="quote-parallax-orb quote-parallax-orb-3 pointer-events-none absolute -bottom-10 right-1/4 w-64 sm:w-80 h-64 sm:h-80 rounded-full blur-2xl opacity-20 z-0" data-parallax-speed="-0.1" aria-hidden="true"></div>
+
+    <!-- Main Quote Hero Content -->
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 w-full pt-4 sm:pt-6 lg:pt-8 pb-16 sm:pb-20 lg:pb-24 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-start">
+            
+            <!-- Left Column: Value Proposition & Real Claims Reassurance -->
+            <div class="lg:col-span-6 xl:col-span-6 flex flex-col justify-start">
+                
+                <!-- Eyebrow Pill -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-sm shadow-soft-sm border border-white/15 text-white text-caption sm:text-body-sm font-display font-semibold mb-3 sm:mb-4 w-fit">
+                    <span class="w-2 h-2 rounded-full animate-pulse" style="background-color: var(--color-footer-pink);"></span>
+                    <span>Tailored Group Health &amp; Employee Benefits</span>
+                </div>
+
+                <!-- Main Conversion Headline (Matching reference editorial serif title style) -->
+                <h1 class="text-[32px] sm:text-[40px] md:text-[46px] lg:text-[48px] xl:text-[52px] font-serif font-normal text-white leading-[1.12] tracking-[-0.025em] mb-3 sm:mb-4">
+                    Protect your team with <span class="italic font-serif text-[var(--color-champagne)] font-normal inline-block pr-1">healthcare they can count on.</span>
+                </h1>
+
+                <!-- Supporting Line -->
+                <p class="text-body sm:text-body-lg text-quote-lavender leading-relaxed mb-6 sm:mb-8 max-w-xl">
+                    Share your team details to receive a customized group insurance and employee benefits proposal built specifically for Indian organizations.
+                </p>
+
+                <!-- Reassurance Points Stack (Real non-numeric site claims only) -->
+                <div class="flex flex-col gap-3 sm:gap-3.5 mb-8">
+                    <!-- Point 1 -->
+                    <div class="flex items-start gap-3.5 p-3.5 sm:p-4 rounded-xl quote-card-glass shadow-soft-sm transition-transform duration-200 hover:-translate-y-0.5">
+                        <div class="w-9 h-9 rounded-lg bg-white/10 border border-white/15 flex items-center justify-center flex-shrink-0 text-white mt-0.5" aria-hidden="true">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-body-sm sm:text-body font-display font-bold text-white leading-snug">
+                                Dedicated claims desk support
+                            </h2>
+                            <p class="text-caption sm:text-body-sm text-quote-muted leading-relaxed mt-0.5">
+                                Empathetic personal specialist standing by for cashless pre-authorisation and active hospital assistance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div class="flex items-start gap-3.5 p-3.5 sm:p-4 rounded-xl quote-card-glass shadow-soft-sm transition-transform duration-200 hover:-translate-y-0.5">
+                        <div class="w-9 h-9 rounded-lg bg-white/10 border border-white/15 flex items-center justify-center flex-shrink-0 mt-0.5" style="color: var(--color-footer-pink);" aria-hidden="true">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-body-sm sm:text-body font-display font-bold text-white leading-snug">
+                                Automated roster upload &amp; digital health cards
+                            </h2>
+                            <p class="text-caption sm:text-body-sm text-quote-muted leading-relaxed mt-0.5">
+                                Paperless member onboarding and instant e-cards accessible directly by your team and their families.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="flex items-start gap-3.5 p-3.5 sm:p-4 rounded-xl quote-card-glass shadow-soft-sm transition-transform duration-200 hover:-translate-y-0.5">
+                        <div class="w-9 h-9 rounded-lg bg-white/10 border border-white/15 flex items-center justify-center flex-shrink-0 text-white mt-0.5" aria-hidden="true">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-body-sm sm:text-body font-display font-bold text-white leading-snug">
+                                Flexible, tailor-made coverage options
+                            </h2>
+                            <p class="text-caption sm:text-body-sm text-quote-muted leading-relaxed mt-0.5">
+                                Comprehensive plans covering hospitalisation, maternity, parents, pre-existing diseases, and outpatient wellness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Small Trust Indicator Row -->
+                <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-white/15 text-caption font-display font-medium text-quote-lavender">
+                    <span class="inline-flex items-center gap-1.5 bg-white/10 px-2.5 py-1 rounded-full border border-white/15 shadow-soft-sm backdrop-blur-sm text-white">
+                        <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        Cashless Hospital Network
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 bg-white/10 px-2.5 py-1 rounded-full border border-white/15 shadow-soft-sm backdrop-blur-sm text-white">
+                        <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        Direct Care Specialist
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 bg-white/10 px-2.5 py-1 rounded-full border border-white/15 shadow-soft-sm backdrop-blur-sm text-white">
+                        <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        Employer HR Dashboard
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Conversion Quote Form Card -->
+            <div class="lg:col-span-6 xl:col-span-6">
+                <div id="quoteCardContainer" class="bg-surface rounded-2xl shadow-soft-xl border border-primary-100/80 p-6 sm:p-8 lg:p-9 relative overflow-hidden transition-all duration-300">
+                    
+                    <!-- Top Gradient Brand Accent Border -->
+                    <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-primary-900 via-logo-purple to-accent-600" aria-hidden="true"></div>
+
+                    <!-- Card Header -->
+                    <div id="quoteFormHeader">
+                        <h2 class="text-[22px] sm:text-[24px] font-display font-bold text-primary-950 tracking-tight mb-1">
+                            Request a custom quote
+                        </h2>
+                        <p class="text-body-sm text-neutral-600 mb-6">
+                            Fill in your details below and an employee benefits specialist will get back to you with tailored pricing.
+                        </p>
+                    </div>
+
+                    <!-- General Server Alert / Notice -->
+                    <div id="quoteGeneralAlert" class="hidden mb-5 p-3.5 rounded-xl text-body-sm font-medium" role="alert" aria-live="assertive"></div>
+
+                    <!-- Quote Form -->
+                    <form id="quoteForm" action="./" method="POST" novalidate class="flex flex-col gap-4">
+                        
+                        <!-- CSRF Field -->
+                        <input type="hidden" name="csrf_test_name" value="aee965c7c1eb227813ebda1ed8d87a8c">
+                        <!-- Spam Bot Honeypot (hidden from sighted users and screen readers) -->
+                        <div class="sr-only" aria-hidden="true">
+                            <label for="website_hp">Leave this field blank</label>
+                            <input type="text" name="website_hp" id="website_hp" tabindex="-1" autocomplete="off" />
+                        </div>
+
+                        <!-- Field: Full Name -->
+                        <div class="form-group flex flex-col gap-1.5">
+                            <label for="full_name" class="font-display font-semibold text-neutral-800 text-body-sm">
+                                Your Full Name <span class="text-accent-600">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="full_name" 
+                                name="full_name" 
+                                required 
+                                placeholder="e.g. Priya Sharma" 
+                                autocomplete="name"
+                                class="quote-input w-full px-4 py-3 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200"
+                                aria-describedby="err_full_name"
+                            >
+                            <span id="err_full_name" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+                        </div>
+
+                        <!-- 2-Column Row: Work Email & Phone Number -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Work Email -->
+                            <div class="form-group flex flex-col gap-1.5">
+                                <label for="work_email" class="font-display font-semibold text-neutral-800 text-body-sm">
+                                    Work Email <span class="text-accent-600">*</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="work_email" 
+                                    name="work_email" 
+                                    required 
+                                    placeholder="priya@company.com" 
+                                    autocomplete="email"
+                                    class="quote-input w-full px-4 py-3 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200"
+                                    aria-describedby="err_work_email"
+                                >
+                                <span id="err_work_email" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="form-group flex flex-col gap-1.5">
+                                <label for="phone_number" class="font-display font-semibold text-neutral-800 text-body-sm">
+                                    Phone Number <span class="text-accent-600">*</span>
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="phone_number" 
+                                    name="phone_number" 
+                                    required 
+                                    placeholder="98765 43210" 
+                                    autocomplete="tel"
+                                    class="quote-input w-full px-4 py-3 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200"
+                                    aria-describedby="err_phone_number"
+                                >
+                                <span id="err_phone_number" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <!-- 2-Column Row: Company Name & Team Size -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Company Name -->
+                            <div class="form-group flex flex-col gap-1.5">
+                                <label for="company_name" class="font-display font-semibold text-neutral-800 text-body-sm">
+                                    Company Name <span class="text-accent-600">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="company_name" 
+                                    name="company_name" 
+                                    required 
+                                    placeholder="e.g. Acme Tech" 
+                                    autocomplete="organization"
+                                    class="quote-input w-full px-4 py-3 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200"
+                                    aria-describedby="err_company_name"
+                                >
+                                <span id="err_company_name" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+                            </div>
+
+                            <!-- Team Size Select -->
+                            <div class="form-group flex flex-col gap-1.5">
+                                <label for="company_size" class="font-display font-semibold text-neutral-800 text-body-sm">
+                                    Team Size <span class="text-accent-600">*</span>
+                                </label>
+                                <div class="relative">
+                                    <select 
+                                        id="company_size" 
+                                        name="company_size" 
+                                        required 
+                                        class="quote-input w-full px-4 py-3 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200 appearance-none pr-10 cursor-pointer"
+                                        aria-describedby="err_company_size"
+                                    >
+                                        <option value="">Select team size</option>
+                                        <option value="1 - 10 employees">1 - 10 employees (Early stage)</option>
+                                        <option value="11 - 50 employees">11 - 50 employees (Growing team)</option>
+                                        <option value="51 - 200 employees">51 - 200 employees (Mid size)</option>
+                                        <option value="201 - 500 employees">201 - 500 employees (Enterprise)</option>
+                                        <option value="500+ employees">500+ employees (Large team)</option>
+                                    </select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-neutral-500" aria-hidden="true">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span id="err_company_size" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <!-- Optional Message / Requirements -->
+                        <div class="form-group flex flex-col gap-1.5">
+                            <label for="message" class="font-display font-semibold text-neutral-800 text-body-sm flex items-center justify-between">
+                                <span>Specific Coverage Needs or Renewal Date</span>
+                                <span class="text-neutral-400 font-normal text-[12px]">Optional</span>
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="3" 
+                                placeholder="Tell us if you have an existing policy expiring, parent cover requirements, or wellness preferences..." 
+                                class="quote-input w-full px-4 py-3 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200 resize-y"
+                            ></textarea>
+                        </div>
+
+                        <!-- Primary Red Submit Button with Project Hover Sweep Effect -->
+                        <div class="pt-2">
+                            <button 
+                                type="submit" 
+                                id="quoteSubmitBtn" 
+                                class="btn-primary btn-sweep btn-sweep--purple w-full justify-center !rounded-btn !py-3.5 sm:!py-4 !px-6 !text-body font-display font-bold shadow-glow-accent cursor-pointer transition-transform"
+                            >
+                                <span>Get custom quote</span>
+                                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Privacy & Guarantee Footnote -->
+                        <p class="text-[12px] text-neutral-500 text-center mt-0.5 leading-relaxed">
+                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 align-middle" aria-hidden="true"></span>
+                            Zero spam guarantee. Your details are safe and used solely to prepare your customized insurance quote.
+                        </p>
+
+                    </form>
+
+                    <!-- Interactive Success State (Displayed upon submission) -->
+                    <div id="quoteSuccessState" class="hidden flex-col items-center text-center py-6 sm:py-8" role="status" aria-live="polite">
+                        <div class="w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center mb-5 shadow-soft-sm" aria-hidden="true">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-h3 font-display font-bold text-primary-950 mb-2">
+                            Quote Request Received!
+                        </h3>
+
+                        <p id="quoteSuccessMessageText" class="text-body text-neutral-600 max-w-md mb-6 leading-relaxed">
+                            Thank you! Our employee benefits specialist has received your requirements and will reach out shortly.
+                        </p>
+
+                        <!-- Next Steps Reassurance Box -->
+                        <div class="w-full bg-primary-50/70 border border-primary-100/80 rounded-xl p-4 sm:p-5 mb-6 text-left">
+                            <div class="font-display font-bold text-primary-950 text-body-sm mb-1.5 flex items-center gap-2">
+                                <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>What happens next</span>
+                            </div>
+                            <p class="text-neutral-600 text-caption sm:text-body-sm leading-relaxed m-0">
+                                We will compare group policy options across leading underwriters for your team size, evaluate cashless hospital network density near your team's locations, and deliver a clear side-by-side proposal.
+                            </p>
+                        </div>
+
+                        <a href="../" class="btn-secondary !rounded-btn !py-2.5 !px-6 text-body-sm">
+                            <span>Return to Moxman home</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+    </main>
+
+    <!-- Shared Footer Partial -->
+    <!-- DEBUG-VIEW START 1 APPPATH/Views/partials/footer.php -->
+<!-- Site Footer -->
+<footer class="site-footer w-full mt-auto" aria-label="Site Footer">
+
+    <!-- =========================================================================
+         ATMOSPHERIC TEAM BAND & MISSION STATEMENT OVERLAY
+         Deep dark Moxman purple backdrop, clearly visible glowing brand wordmark,
+         transparent team portrait cutout of Indian professionals, reduced height
+         ========================================================================= -->
+    <section class="footer-team-band relative w-full" aria-label="Our Mission and Team">
+        <!-- Layer 1: Dark Purple Ambient Backdrop & Section Vignette -->
+        <div class="footer-team-backdrop" aria-hidden="true"></div>
+        <div class="footer-team-vignette" aria-hidden="true"></div>
+
+        <!-- Layer 2: Pure CSS Ambient Glow behind brand wordmark (instant first-paint, zero clipping) -->
+        <div class="footer-brand-ambient-glow" aria-hidden="true"></div>
+
+        <!-- Layer 3: Brand Wordmark (Crisp logo positioned over ambient glow) -->
+        <div class="footer-brand-logo" aria-hidden="true">
+            <picture>
+                <source srcset="../assets/images/brand/moxman-logo.webp" type="image/webp">
+                <img src="../assets/images/brand/moxman-logo.png" 
+                     alt="" 
+                     width="1854" 
+                     height="394" 
+                     class="footer-brand-logo-img"
+                     loading="lazy" 
+                     decoding="async">
+            </picture>
+        </div>
+
+        <!-- Layer 4: Transparent Team Cutout (Front layer over logo, smooth 300ms fade-in) -->
+        <div class="footer-team-cutout-wrap">
+            <picture class="w-full block">
+                <source srcset="../assets/images/footer/moxman-team-cutout-640.webp 640w, ../assets/images/footer/moxman-team-cutout-960.webp 960w, ../assets/images/footer/moxman-team-cutout-1376.webp 1376w" 
+                        sizes="(min-width: 1024px) 1344px, 100vw" 
+                        type="image/webp">
+                <source srcset="../assets/images/footer/moxman-team-cutout-640.png 640w, ../assets/images/footer/moxman-team-cutout-960.png 960w, ../assets/images/footer/moxman-team-cutout-1376.png 1376w" 
+                        sizes="(min-width: 1024px) 1344px, 100vw" 
+                        type="image/png">
+                <img src="../assets/images/footer/moxman-team-cutout-1376.png" 
+                     alt="Moxman Fintech professional team portrait" 
+                     width="1376" 
+                     height="696" 
+                     loading="lazy" 
+                     decoding="async" 
+                     class="footer-team-cutout-img"
+                     onload="this.classList.add('is-loaded')">
+            </picture>
+
+            <!-- Soft bottom scrim to blend sofa base seamlessly into footer body -->
+            <div class="footer-team-bottom-scrim" aria-hidden="true"></div>
+        </div>
+
+        <!-- Layer 4: Overlaid Mission Statement across lower portion of photo -->
+        <div class="footer-mission-wrap max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full mb-3 sm:mb-3.5 border footer-mission-eyebrow">
+                <span class="w-2 h-2 rounded-full animate-pulse" style="background-color: var(--color-footer-pink);"></span>
+                <span class="text-[11px] sm:text-caption font-display font-bold uppercase tracking-[0.16em]">
+                    The Moxman Mission
+                </span>
+            </div>
+
+            <h2 class="footer-mission-heading text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[36px] font-serif font-extrabold text-white tracking-[-0.03em] leading-[1.25] max-w-none mx-auto">
+                Our mission is to help teams and families get care they can count on<br class="hidden md:inline"> <span class="italic text-[var(--color-champagne)] font-serif">and benefits they can understand.</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Glowing Pink-Purple Divider: Dividing moment with soft beam and ambient bloom -->
+    <div class="footer-glow-divider-wrap" aria-hidden="true">
+        <div class="footer-glow-divider-beam"></div>
+        <div class="footer-glow-divider-bloom"></div>
+    </div>
+
+    <!-- =========================================================================
+         FOOTER BODY & NAVIGATION COLUMNS
+         Organised grid with bold white headings, lighter readable links,
+         smooth pink hover states, coverage disclosure, and legal bottom bar
+         ========================================================================= -->
+    <div class="footer-body relative w-full pt-2 pb-12 sm:pb-16">
+        <div class="footer-body-ambient" aria-hidden="true"></div>
+
+
+        <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Main Footer Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12 pb-14 sm:pb-16">
+                
+                <!-- Brand Column -->
+                <div class="sm:col-span-2 lg:col-span-2 flex flex-col gap-5">
+                    <a href="../" class="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-footer-pink focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg rounded-sm" aria-label="Moxman Fintech">
+                        <picture>
+                            <source srcset="../assets/images/brand/logo.webp" type="image/webp">
+                            <img 
+                                src="../assets/images/brand/logo.png" 
+                                alt="Moxman Fintech - Group Health Insurance and Employee Benefits"
+                                width="218" 
+                                height="46" 
+                                class="h-9 w-auto brightness-0 invert opacity-95 hover:opacity-100 transition-opacity"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </picture>
+                    </a>
+                    
+                    <p class="text-body-sm text-footer-text max-w-sm leading-relaxed">
+                        Moxman Fintech helps Indian employers bring group insurance, employee benefits, claims support, and wellness into one experience.
+                    </p>
+
+                    <!-- Product positioning -->
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-2 rounded-lg bg-white/[0.04] border border-white/[0.08] text-caption text-footer-text w-fit">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></span>
+                        <span>Group benefits for Indian teams</span>
+                    </div>
+                </div>
+
+                <!-- Col 1: Insurance Products -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-h6 font-display font-bold text-white tracking-wide">Explore</h3>
+                    <ul class="flex flex-col gap-2.5 text-body-sm">
+                        <li><a href="../#approach" class="footer-link">The Moxman approach</a></li>
+                        <li><a href="../#groupSuite" class="footer-link">For people</a></li>
+                        <li><a href="../#platform" class="footer-link">How it works</a></li>
+                        <li><a href="../#solutions" class="footer-link">Who it is for</a></li>
+                        <li><a href="./" class="footer-link">Get a quote</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Claims & Assistance -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-h6 font-display font-bold text-white tracking-wide">Questions</h3>
+                    <ul class="flex flex-col gap-2.5 text-body-sm">
+                        <li><a href="../#claims" class="footer-link">When the unexpected happens</a></li>
+                        <li><a href="../#faq" class="footer-link">Frequently asked questions</a></li>
+                        <li><a href="../#about" class="footer-link">About Moxman</a></li>
+                        <li><a href="../#platform" class="footer-link">Share your context</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Company & Trust -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-h6 font-display font-bold text-white tracking-wide">Important details</h3>
+                    <ul class="flex flex-col gap-2.5 text-body-sm">
+                        <li><a href="../#claims" class="footer-link">Policy details</a></li>
+                        <li><a href="../#faq" class="footer-link">What is confirmed</a></li>
+                        <li><a href="../#solutions" class="footer-link">Contact destination</a></li>
+                        <li><a href="../#claims" class="footer-link">Policy terms and exclusions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Coverage disclosure -->
+            <div class="py-5 px-6 rounded-xl bg-white/[0.03] border border-white/[0.08] text-caption text-footer-muted leading-relaxed mb-8">
+                <p>
+                    <strong class="text-white font-semibold">Coverage disclosure:</strong> Insurance products are subject to the applicable policy wording, eligibility, terms, conditions, limits, and exclusions. Final coverage and claims decisions are made under the relevant policy.
+                </p>
+            </div>
+
+            <!-- Bottom Bar: Copyright & Security -->
+            <div class="pt-6 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-caption text-footer-muted">
+                <p>&copy; 2026 Moxman Fintech Pvt. Ltd. All rights reserved.</p>
+                <div class="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-2">
+                    <span>Privacy-first product design</span>
+                    <span>Secure digital workflows</span>
+                    <span>Made for Indian teams</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- DEBUG-VIEW ENDED 1 APPPATH/Views/partials/footer.php -->
+
+    <!-- Deferred Bundled JavaScript (GSAP + ScrollTrigger + Lenis) -->
+    <script src="../assets/js/app.min.js" defer></script>
+</body>
+</html>
+
+<!-- DEBUG-VIEW ENDED 2 APPPATH/Views/layouts/main.php -->
+
+<!-- DEBUG-VIEW ENDED 3 APPPATH/Views/quote.php -->

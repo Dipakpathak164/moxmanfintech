@@ -366,7 +366,16 @@
         <!-- Bottom Curved Shape (Tick mark sweep ✓: left dip, sweeping rise to high right end) -->
         <div class="hero-bottom-curve-wrap" aria-hidden="true">
             <svg class="hero-bottom-curve-svg" viewBox="0 0 1440 300" preserveAspectRatio="none" focusable="false">
-                <path class="hero-bottom-curve-path" d="M 0,72 C 280,105 760,62 1440,8 L 1440,300 L 0,300 Z"/>
+                <defs>
+                    <linearGradient id="heroBottomCurveGrad" x1="0%" y1="15%" x2="100%" y2="85%">
+                        <stop offset="0%" stop-color="#1351c2"/>
+                        <stop offset="25%" stop-color="#3e4eb6"/>
+                        <stop offset="50%" stop-color="#6c4aab"/>
+                        <stop offset="75%" stop-color="#a0469e"/>
+                        <stop offset="100%" stop-color="#df2065"/>
+                    </linearGradient>
+                </defs>
+                <path class="hero-bottom-curve-path" fill="url(#heroBottomCurveGrad)" d="M 0,72 C 280,105 760,62 1440,8 L 1440,300 L 0,300 Z"/>
             </svg>
         </div>
         
@@ -950,7 +959,7 @@
                                  aria-labelledby="tab-complete-protection" 
                                  aria-hidden="false">
                                 <h2 class="about-heading text-[34px] sm:text-[44px] lg:text-[50px] xl:text-[56px] font-serif font-normal text-white mb-2 leading-[1.12] tracking-[-0.025em] [text-wrap:balance]">
-                                    Benefits that work harder <span class="italic font-serif text-[var(--color-champagne)] font-normal">for your people.</span>
+                                    Benefits that work harder <span class="italic font-serif text-[#70ee91] font-normal">for your people.</span>
                                 </h2>
                                 <p class="about-lead text-[14px] sm:text-[14.5px] xl:text-[15px] text-white/95 font-semibold leading-snug mb-1.5 max-w-full">
                                     Our insurance plans ensure everyone is included—parents, spouses, children, LGBTQ+ partners, and in-laws.                                </p>
@@ -965,7 +974,7 @@
                                  aria-labelledby="tab-holistic-healthcare" 
                                  aria-hidden="true">
                                 <h2 class="about-heading text-[34px] sm:text-[44px] lg:text-[50px] xl:text-[56px] font-serif font-normal text-white mb-2 leading-[1.12] tracking-[-0.025em] [text-wrap:balance]">
-                                    True care goes beyond insurance, <span class="italic font-serif text-[var(--color-champagne)] font-normal">true care is transformative.</span>
+                                    True care goes beyond insurance, <span class="italic font-serif text-[#70ee91] font-normal">true care is transformative.</span>
                                 </h2>
                                 <p class="about-lead text-[14px] sm:text-[14.5px] xl:text-[15px] text-white/95 font-semibold leading-snug mb-1.5 max-w-full">
                                     We&#039;re your comprehensive partner for all your team&#039;s health outcomes—from preventive care to crisis support.                                </p>
@@ -1073,7 +1082,7 @@
 
                         <!-- 4 Product Cards in 2x2 Grid -->
                         <div class="about-suite-grid grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-4.5 mb-6">
-                                                            <a href="#platform" class="about-suite-card about-suite-card-green group">
+                                                            <a href="./group-health-insurance" class="about-suite-card about-suite-card-green group">
                                     <!-- Top Row: Custom Floating Icon on Left, Arrow Action on Right -->
                                     <div class="about-card-top-row flex items-start justify-between gap-3 mb-4">
                                         <div class="card-floating-unit" aria-hidden="true">
@@ -1104,7 +1113,7 @@
                                             Comprehensive health insurance plans that consider all your needs.                                        </p>
                                     </div>
                                 </a>
-                                                            <a href="#claims" class="about-suite-card about-suite-card-blue group">
+                                                            <a href="./group-health-insurance" class="about-suite-card about-suite-card-blue group">
                                     <!-- Top Row: Custom Floating Icon on Left, Arrow Action on Right -->
                                     <div class="about-card-top-row flex items-start justify-between gap-3 mb-4">
                                         <div class="card-floating-unit" aria-hidden="true">
@@ -1135,7 +1144,7 @@
                                             Accidental policies that can be tailor-made to meet your team strength&#039;s and needs.                                        </p>
                                     </div>
                                 </a>
-                                                            <a href="#quote" class="about-suite-card about-suite-card-yellow group">
+                                                            <a href="./group-health-insurance" class="about-suite-card about-suite-card-yellow group">
                                     <!-- Top Row: Custom Floating Icon on Left, Arrow Action on Right -->
                                     <div class="about-card-top-row flex items-start justify-between gap-3 mb-4">
                                         <div class="card-floating-unit" aria-hidden="true">
@@ -1166,7 +1175,7 @@
                                             Protect your employees and their families with the best group-term life insurance policy.                                        </p>
                                     </div>
                                 </a>
-                                                            <a href="#quote" class="about-suite-card about-suite-card-pink group">
+                                                            <a href="./group-health-insurance" class="about-suite-card about-suite-card-pink group">
                                     <!-- Top Row: Custom Floating Icon on Left, Arrow Action on Right -->
                                     <div class="about-card-top-row flex items-start justify-between gap-3 mb-4">
                                         <div class="card-floating-unit" aria-hidden="true">
@@ -2098,13 +2107,13 @@
             <!-- Left: Pill & Large Editorial Serif Heading -->
             <div class="max-w-2xl" data-reveal="left">
                 <!-- Pill Label -->
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[var(--color-champagne)] bg-[rgba(223,193,123,0.06)] text-[var(--color-champagne)] text-[11px] sm:text-caption font-display font-bold uppercase tracking-[0.14em] mb-4 sm:mb-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#70ee91] bg-[#70ee91]/10 text-[#70ee91] text-[11px] sm:text-caption font-display font-bold uppercase tracking-[0.14em] mb-4 sm:mb-6">
                     <span>Tailored Solutions</span>
                 </div>
                 
                 <!-- Display Heading with Italic Accent -->
                 <h2 id="solutions-heading" class="text-[34px] sm:text-[44px] lg:text-[50px] xl:text-[56px] font-serif font-normal text-white leading-[1.12] tracking-[-0.025em]">
-                    Designed for Indian<br class="hidden sm:inline"> organisations at <span class="italic font-serif text-[var(--color-champagne)] font-normal">every scale.</span>
+                    Designed for Indian<br class="hidden sm:inline"> organisations at <span class="italic font-serif text-[#70ee91] font-normal">every scale.</span>
                 </h2>
             </div>
 
@@ -2128,7 +2137,7 @@
                     <!-- Scale Meter (1 of 4 filled) -->
                     <div class="flex items-center justify-between mb-5">
                         <div class="flex items-center gap-1.5" aria-hidden="true">
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
                             <span class="w-5 h-1 rounded-full bg-white/15"></span>
                             <span class="w-5 h-1 rounded-full bg-white/15"></span>
                             <span class="w-5 h-1 rounded-full bg-white/15"></span>
@@ -2153,15 +2162,15 @@
                     <!-- Three Bullets with Accent Dots -->
                     <ul class="space-y-2 mb-6 text-[12px] sm:text-[12.5px] text-white/80" role="list">
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Paperless digital onboarding</span>
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Low minimum headcount barriers</span>
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Instant quote calculation</span>
                         </li>
                     </ul>
@@ -2169,9 +2178,9 @@
 
                 <!-- Pinned Link at Bottom -->
                 <div class="pt-4 border-t border-white/10 mt-auto">
-                    <a href="#audience" class="inline-flex items-center gap-2.5 min-h-[44px] text-[13px] sm:text-body-sm font-display font-bold text-white hover:text-[var(--color-champagne)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-2 focus-visible:ring-offset-[#18092d] rounded-lg group">
+                    <a href="#audience" class="inline-flex items-center gap-2.5 min-h-[44px] text-[13px] sm:text-body-sm font-display font-bold text-white hover:text-[#70ee91] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#70ee91] focus-visible:ring-offset-2 focus-visible:ring-offset-[#18092d] rounded-lg group">
                         <span>Know more</span>
-                        <span class="w-7 h-7 rounded-full border border-white/25 flex items-center justify-center text-white group-hover:border-[var(--color-champagne)] group-hover:text-[var(--color-champagne)] group-hover:translate-x-0.5 transition-all" aria-hidden="true">
+                        <span class="w-7 h-7 rounded-full border border-white/25 flex items-center justify-center text-white group-hover:border-[#70ee91] group-hover:text-[#70ee91] group-hover:translate-x-0.5 transition-all" aria-hidden="true">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                         </span>
                     </a>
@@ -2184,8 +2193,8 @@
                     <!-- Scale Meter (2 of 4 filled) -->
                     <div class="flex items-center justify-between mb-5">
                         <div class="flex items-center gap-1.5" aria-hidden="true">
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
                             <span class="w-5 h-1 rounded-full bg-white/15"></span>
                             <span class="w-5 h-1 rounded-full bg-white/15"></span>
                         </div>
@@ -2209,15 +2218,15 @@
                     <!-- Three Bullets with Accent Dots -->
                     <ul class="space-y-2 mb-6 text-[12px] sm:text-[12.5px] text-white/80" role="list">
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Tiered grade coverage options</span>
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>OPD & maternity add-on riders</span>
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Dedicated claims assistance</span>
                         </li>
                     </ul>
@@ -2225,9 +2234,9 @@
 
                 <!-- Pinned Link at Bottom -->
                 <div class="pt-4 border-t border-white/10 mt-auto">
-                    <a href="#audience" class="inline-flex items-center gap-2.5 min-h-[44px] text-[13px] sm:text-body-sm font-display font-bold text-white hover:text-[var(--color-champagne)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-2 focus-visible:ring-offset-[#18092d] rounded-lg group">
+                    <a href="#audience" class="inline-flex items-center gap-2.5 min-h-[44px] text-[13px] sm:text-body-sm font-display font-bold text-white hover:text-[#70ee91] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#70ee91] focus-visible:ring-offset-2 focus-visible:ring-offset-[#18092d] rounded-lg group">
                         <span>Know more</span>
-                        <span class="w-7 h-7 rounded-full border border-white/25 flex items-center justify-center text-white group-hover:border-[var(--color-champagne)] group-hover:text-[var(--color-champagne)] group-hover:translate-x-0.5 transition-all" aria-hidden="true">
+                        <span class="w-7 h-7 rounded-full border border-white/25 flex items-center justify-center text-white group-hover:border-[#70ee91] group-hover:text-[#70ee91] group-hover:translate-x-0.5 transition-all" aria-hidden="true">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                         </span>
                     </a>
@@ -2240,9 +2249,9 @@
                     <!-- Scale Meter (3 of 4 filled) -->
                     <div class="flex items-center justify-between mb-5">
                         <div class="flex items-center gap-1.5" aria-hidden="true">
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
                             <span class="w-5 h-1 rounded-full bg-white/15"></span>
                         </div>
                         <span class="text-[11px] font-mono font-medium tracking-widest text-white/45">03</span>
@@ -2265,15 +2274,15 @@
                     <!-- Three Bullets with Accent Dots -->
                     <ul class="space-y-2 mb-6 text-[12px] sm:text-[12.5px] text-white/80" role="list">
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Custom corporate buffer pool</span>
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Actuarial loss ratio insights</span>
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Executive healthcare concierge</span>
                         </li>
                     </ul>
@@ -2281,9 +2290,9 @@
 
                 <!-- Pinned Link at Bottom -->
                 <div class="pt-4 border-t border-white/10 mt-auto">
-                    <a href="#audience" class="inline-flex items-center gap-2.5 min-h-[44px] text-[13px] sm:text-body-sm font-display font-bold text-white hover:text-[var(--color-champagne)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-2 focus-visible:ring-offset-[#18092d] rounded-lg group">
+                    <a href="#audience" class="inline-flex items-center gap-2.5 min-h-[44px] text-[13px] sm:text-body-sm font-display font-bold text-white hover:text-[#70ee91] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#70ee91] focus-visible:ring-offset-2 focus-visible:ring-offset-[#18092d] rounded-lg group">
                         <span>Know more</span>
-                        <span class="w-7 h-7 rounded-full border border-white/25 flex items-center justify-center text-white group-hover:border-[var(--color-champagne)] group-hover:text-[var(--color-champagne)] group-hover:translate-x-0.5 transition-all" aria-hidden="true">
+                        <span class="w-7 h-7 rounded-full border border-white/25 flex items-center justify-center text-white group-hover:border-[#70ee91] group-hover:text-[#70ee91] group-hover:translate-x-0.5 transition-all" aria-hidden="true">
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                         </span>
                     </a>
@@ -2291,15 +2300,15 @@
             </article>
 
             <!-- Card 4: MNCs & GCCs (Tier 4 - Inverted Pale Lavender & Accent Border Focal Point) -->
-            <article class="solutions-card solutions-card-inverted solutions-card-tier-4 p-6 sm:p-7 xl:p-7 rounded-[28px]" data-reveal="batch" aria-label="Solutions for MNCs and GCCs">
+            <article class="solutions-card solutions-card-inverted solutions-card-tier-4 p-6 sm:p-7 xl:p-7 rounded-[28px] !border-[#70ee91]" data-reveal="batch" aria-label="Solutions for MNCs and GCCs">
                 <div>
                     <!-- Scale Meter (4 of 4 filled in champagne accent) -->
                     <div class="flex items-center justify-between mb-5">
                         <div class="flex items-center gap-1.5" aria-hidden="true">
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
-                            <span class="w-5 h-1 rounded-full bg-[var(--color-champagne)]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
+                            <span class="w-5 h-1 rounded-full bg-[#70ee91]"></span>
                         </div>
                         <span class="text-[11px] font-mono font-medium tracking-widest text-[#18092d]/50">04</span>
                     </div>
@@ -2321,15 +2330,15 @@
                     <!-- Three Bullets with Accent Dots -->
                     <ul class="space-y-2 mb-6 text-[12px] sm:text-[12.5px] text-[#240d3f]" role="list">
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Global compliance alignment</span>
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Expat healthcare options</span>
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-champagne)] flex-shrink-0" aria-hidden="true"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#70ee91] flex-shrink-0" aria-hidden="true"></span>
                             <span>Multi-entity billing & reporting</span>
                         </li>
                     </ul>
@@ -2462,7 +2471,7 @@
                 <span>Client Perspectives</span>
             </div>
             <h2 id="testimonials-heading" class="text-[28px] sm:text-[36px] lg:text-[44px] font-serif font-normal text-white tracking-[-0.025em] leading-[1.18] mb-4">
-                Trusted by People leaders <span class="italic text-[var(--color-champagne)] font-serif">and operations teams.</span>
+                Trusted by People leaders <span class="italic text-[#70ee91] font-serif">and operations teams.</span>
             </h2>
             <p class="text-body sm:text-body-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
                 How HR teams and employees experience modern healthcare benefits with Moxman.
@@ -3506,7 +3515,7 @@
             </div>
 
             <h2 class="footer-mission-heading text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[36px] font-serif font-extrabold text-white tracking-[-0.03em] leading-[1.25] max-w-none mx-auto">
-                Our mission is to help teams and families get care they can count on<br class="hidden md:inline"> <span class="italic text-[var(--color-champagne)] font-serif">and benefits they can understand.</span>
+                Our mission is to help teams and families get care they can count on<br class="hidden md:inline"> <span class="italic text-[#70ee91] font-serif">and benefits they can understand.</span>
             </h2>
         </div>
     </section>

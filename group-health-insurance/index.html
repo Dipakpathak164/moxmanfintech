@@ -1,0 +1,2476 @@
+<!-- DEBUG-VIEW START 6 APPPATH/Views/group-health-insurance.php -->
+<!-- DEBUG-VIEW START 5 APPPATH/Views/layouts/main.php -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Group Health Insurance for Employees | Moxman Fintech</title>
+    <meta name="description" content="Comprehensive and flexible group health insurance for your employees with seamless cashless claims, digital healthcare cards, and minimal HR overhead.">
+    <meta name="author" content="Moxman Fintech">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="../group-health-insurance">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="../group-health-insurance">
+    <meta property="og:title" content="Group Health Insurance for Employees | Moxman Fintech">
+    <meta property="og:description" content="Comprehensive and flexible group health insurance for your employees with seamless cashless claims, digital healthcare cards, and minimal HR overhead.">
+    <meta property="og:image" content="../assets/images/about/GlossyPurpleMedicalShieldIcon.png">
+    <meta property="og:site_name" content="Moxman Fintech">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:image:alt" content="Moxman Fintech group health insurance and employee benefits platform">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="../group-health-insurance">
+    <meta name="twitter:title" content="Group Health Insurance for Employees | Moxman Fintech">
+    <meta name="twitter:description" content="Comprehensive and flexible group health insurance for your employees with seamless cashless claims, digital healthcare cards, and minimal HR overhead.">
+    <meta name="twitter:image" content="../assets/images/about/GlossyPurpleMedicalShieldIcon.png">
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <meta name="theme-color" content="#212c65">
+
+    <!-- Preload Critical Fonts & LCP Logo Asset -->
+    <link rel="preload" href="../assets/fonts/outfit-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/plusjakartasans-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/images/brand/logo.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="prefetch" href="../assets/images/brand/moxman-logo.webp" as="image" type="image/webp">
+
+    <!-- Google Fonts: Editorial Serif (Playfair Display) for Tailored Solutions & Display Headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- Compiled Minified Tailwind & Design System CSS -->
+    <link rel="stylesheet" href="../assets/css/main.min.css">
+
+    <!-- Progressive Enhancement Detection Script (Inline, non-blocking) -->
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- JSON-LD Structured Data: Organization + website context -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "../#organization",
+            "name": "Moxman Fintech",
+            "url": "../",
+            "logo": "../assets/images/brand/logo.png",
+            "description": "Group health insurance and employee benefits for Indian employers.",
+            "areaServed": {
+                "@type": "Country",
+                "name": "India"
+            },
+            "knowsLanguage": [
+                "English",
+                "Hindi"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "../#website",
+            "url": "../",
+            "name": "Moxman Fintech",
+            "publisher": {
+                "@id": "../#organization"
+            },
+            "inLanguage": "en-IN"
+        }
+    ]
+}    </script>
+</head>
+<body class="bg-surface text-neutral-800 font-body antialiased selection:bg-primary-900 selection:text-white flex flex-col min-h-screen page-group-health">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#mainContent" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-900 focus:text-white focus:rounded-md">
+        Skip to main content
+    </a>
+
+    <!-- Shared Header Partial -->
+            <!-- DEBUG-VIEW START 3 APPPATH/Views/partials/header.php -->
+<!-- Full-Width Navigation Header -->
+<header id="siteHeader" class="fixed top-0 left-0 w-full z-50 transition-[background-color,box-shadow] duration-250 py-3 sm:py-3.5">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4 w-full">
+        
+        <!-- Left Group: Brand Logo & Desktop Navigation Links -->
+        <div class="flex items-center gap-6 lg:gap-8 xl:gap-10 min-w-0">
+            <a href="../" class="flex items-center gap-2 flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded-btn" aria-label="Moxman Fintech Home">
+                <picture>
+                    <source srcset="../assets/images/brand/logo.webp" type="image/webp">
+                    <img 
+                        src="../assets/images/brand/logo.png" 
+                        alt="Moxman Fintech - Insurance & Financial Protection" 
+                        width="218" 
+                        height="46" 
+                        class="h-7 sm:h-7.5 md:h-8 w-auto object-contain"
+                        fetchpriority="high"
+                    >
+                </picture>
+            </a>
+
+            <!-- Desktop Navigation Links next to logo -->
+            <nav class="hidden lg:flex items-center gap-1.5 lg:gap-2 xl:gap-4" aria-label="Primary Navigation">
+                <!-- Dropdown: Benefits -->
+                <div class="relative header-dropdown-group" id="benefitsDropdownGroup">
+                    <button 
+                        type="button" 
+                        id="benefitsMenuBtn" 
+                        class="header-dropdown-btn text-caption sm:text-body-sm font-display font-medium text-neutral-700 hover:text-primary-900 transition-colors duration-150 py-1 px-2 lg:px-2.5 rounded-btn hover:bg-tint-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 inline-flex items-center gap-1 cursor-pointer"
+                        aria-expanded="false" 
+                        aria-haspopup="true"
+                        aria-controls="benefitsDropdownMenu"
+                    >
+                        <span>Benefits</span>
+                        <svg class="w-3.5 h-3.5 transition-transform duration-200 text-neutral-500 dropdown-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <!-- Dropdown Panel -->
+                    <div 
+                        id="benefitsDropdownMenu" 
+                        class="header-dropdown-menu absolute top-full left-0 mt-2 w-64 bg-surface rounded-xl shadow-soft-xl border border-neutral-100/90 p-2 opacity-0 translate-y-1 pointer-events-none transition-all duration-200 z-50 flex flex-col gap-1"
+                        role="menu" 
+                        aria-orientation="vertical"
+                        aria-labelledby="benefitsMenuBtn"
+                    >
+                        <a href="../#groupSuite" class="header-dropdown-item flex flex-col p-2.5 rounded-lg hover:bg-tint-primary transition-colors group/item focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600" role="menuitem">
+                            <span class="font-display font-semibold text-body-sm text-neutral-900 group-hover/item:text-primary-900">Healthcare &amp; Wellness</span>
+                            <span class="text-[12px] text-neutral-500 font-normal">Everyday wellbeing &amp; proactive care</span>
+                        </a>
+                        <a href="../#services" class="header-dropdown-item flex flex-col p-2.5 rounded-lg hover:bg-tint-primary transition-colors group/item focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600" role="menuitem">
+                            <span class="font-display font-semibold text-body-sm text-neutral-900 group-hover/item:text-primary-900">Group Insurance Plans</span>
+                            <span class="text-[12px] text-neutral-500 font-normal">Health, term life, accident &amp; top-up</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="../#platform" class="text-caption sm:text-body-sm font-display font-medium text-neutral-700 hover:text-primary-900 transition-colors duration-150 py-1 px-2 lg:px-2.5 rounded-btn hover:bg-tint-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600">How it works</a>
+                <a href="../#claims" class="text-caption sm:text-body-sm font-display font-medium text-neutral-700 hover:text-primary-900 transition-colors duration-150 py-1 px-2 lg:px-2.5 rounded-btn hover:bg-tint-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600">Claims</a>
+                <a href="../#solutions" class="text-caption sm:text-body-sm font-display font-medium text-neutral-700 hover:text-primary-900 transition-colors duration-150 py-1 px-2 lg:px-2.5 rounded-btn hover:bg-tint-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600">Solutions</a>
+                <a href="../#about" class="text-caption sm:text-body-sm font-display font-medium text-neutral-700 hover:text-primary-900 transition-colors duration-150 py-1 px-2 lg:px-2.5 rounded-btn hover:bg-tint-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600">About</a>
+                <a href="../#faq" class="text-caption sm:text-body-sm font-display font-medium text-neutral-700 hover:text-primary-900 transition-colors duration-150 py-1 px-2 lg:px-2.5 rounded-btn hover:bg-tint-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600">FAQs</a>
+            </nav>
+        </div>
+
+        <!-- Right Group: Header Action CTAs & Mobile Toggle -->
+        <div class="flex items-center gap-2 lg:gap-2.5 flex-shrink-0">
+            <!-- Header Action CTAs with rounded-btn -->
+            <div class="hidden sm:flex items-center gap-1.5 lg:gap-2 xl:gap-2.5">
+                <a href="https://app.moxman.in/login" target="_blank" rel="noopener noreferrer" class="btn-ghost !rounded-btn !py-1.5 !px-2.5 lg:!px-3 !text-caption sm:!text-body-sm" id="headerLoginBtn">
+                    Login
+                </a>
+                <a href="../get-quote" class="btn-ghost !rounded-btn !py-1.5 !px-2.5 lg:!px-3 !text-caption sm:!text-body-sm" id="headerSignInBtn">
+                    Talk to sales
+                </a>
+                <a href="../get-quote" class="btn-primary btn-sweep btn-sweep--purple !rounded-btn !py-1.5 sm:!py-2 !px-3.5 sm:!px-4 lg:!px-4.5 !text-caption sm:!text-body-sm" id="headerQuoteBtn">
+                    <span>Get a quote</span>
+                    <svg class="w-3.5 h-3.5 ml-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle with rounded-btn (visible below lg breakpoint) -->
+            <div class="flex items-center gap-1.5 sm:gap-2 lg:hidden">
+                <a href="https://app.moxman.in/login" target="_blank" rel="noopener noreferrer" class="btn-ghost !rounded-btn !px-2.5 !py-1 !text-[11px] sm:!text-caption sm:hidden">
+                    Login
+                </a>
+                <a href="../get-quote" class="btn-primary btn-sweep btn-sweep--purple !px-2.5 sm:!px-3 !py-1 sm:!py-1.5 !text-[11px] sm:!text-caption !rounded-btn sm:hidden">
+                    <span>Get quote</span>
+                </a>
+                <button 
+                    id="mobileMenuToggle" 
+                    type="button" 
+                    class="p-1.5 rounded-btn text-primary-900 hover:bg-neutral-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 cursor-pointer"
+                    aria-label="Open Navigation Menu"
+                    aria-expanded="false"
+                    aria-controls="mobileNavDrawer"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- Mobile Navigation Drawer Overlay -->
+<div id="mobileNavOverlay" class="fixed inset-0 z-40 bg-primary-950/25 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden" aria-hidden="true"></div>
+
+<!-- Mobile Navigation Floating Rounded Panel (opens below full-width header with 1.5rem radius, soft shadow, no border) -->
+<div id="mobileNavDrawer" class="fixed top-[62px] sm:top-[68px] inset-x-2.5 sm:inset-x-4 max-w-sm sm:max-w-md mx-auto z-50 bg-surface rounded-xl shadow-soft-xl p-5 sm:p-6 opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-smooth flex flex-col lg:hidden" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="flex items-center justify-between pb-4 border-b border-neutral-100">
+        <picture>
+            <source srcset="../assets/images/brand/logo.webp" type="image/webp">
+            <img src="../assets/images/brand/logo.png" alt="Moxman Fintech" width="160" height="34" class="h-7 sm:h-8 w-auto">
+        </picture>
+        <button id="mobileCloseBtn" type="button" class="p-2 rounded-btn text-neutral-500 hover:bg-neutral-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600" aria-label="Close Navigation Menu">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+    </div>
+
+    <nav class="flex flex-col gap-1 py-3" aria-label="Mobile Menu Links">
+        <!-- Benefits expandable item -->
+        <div class="flex flex-col">
+            <button 
+                type="button" 
+                id="mobileBenefitsToggle" 
+                class="flex items-center justify-between text-body-sm sm:text-body font-display font-medium text-neutral-800 hover:text-accent-600 rounded-btn hover:bg-tint-primary px-3 py-2 transition-colors w-full text-left" 
+                aria-expanded="false" 
+                aria-controls="mobileBenefitsSubmenu"
+            >
+                <span>Benefits</span>
+                <svg class="w-4 h-4 transition-transform duration-200 text-neutral-400 mobile-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </button>
+            <div id="mobileBenefitsSubmenu" class="hidden flex-col pl-3 py-1 gap-1 border-l-2 border-primary-100 ml-4 my-0.5">
+                <a href="../#groupSuite" class="text-[13px] sm:text-body-sm font-display font-medium text-neutral-700 hover:text-accent-600 rounded-btn hover:bg-tint-primary px-2.5 py-1.5 transition-colors">Healthcare &amp; Wellness</a>
+                <a href="../#services" class="text-[13px] sm:text-body-sm font-display font-medium text-neutral-700 hover:text-accent-600 rounded-btn hover:bg-tint-primary px-2.5 py-1.5 transition-colors">Group Insurance</a>
+            </div>
+        </div>
+        <a href="../#platform" class="text-body-sm sm:text-body font-display font-medium text-neutral-800 hover:text-accent-600 rounded-btn hover:bg-tint-primary px-3 py-2 transition-colors">How it works</a>
+        <a href="../#claims" class="text-body-sm sm:text-body font-display font-medium text-neutral-800 hover:text-accent-600 rounded-btn hover:bg-tint-primary px-3 py-2 transition-colors">Claims</a>
+        <a href="../#solutions" class="text-body-sm sm:text-body font-display font-medium text-neutral-800 hover:text-accent-600 rounded-btn hover:bg-tint-primary px-3 py-2 transition-colors">Solutions</a>
+        <a href="../#about" class="text-body-sm sm:text-body font-display font-medium text-neutral-800 hover:text-accent-600 rounded-btn hover:bg-tint-primary px-3 py-2 transition-colors">About</a>
+        <a href="../#faq" class="text-body-sm sm:text-body font-display font-medium text-neutral-800 hover:text-accent-600 rounded-btn hover:bg-tint-primary px-3 py-2 transition-colors">FAQs</a>
+    </nav>
+
+    <div class="mt-2 pt-4 border-t border-neutral-100 flex flex-col gap-2.5">
+        <a href="https://app.moxman.in/login" target="_blank" rel="noopener noreferrer" class="btn-ghost w-full justify-center !rounded-btn">Login</a>
+        <a href="../get-quote" class="btn-ghost w-full justify-center !rounded-btn">Talk to sales</a>
+        <a href="../get-quote" class="btn-primary btn-sweep btn-sweep--purple w-full justify-center !rounded-btn"><span>Get a quote</span></a>
+        <p class="text-[11px] sm:text-caption text-neutral-400 text-center mt-2">
+            Group insurance and employee benefits for Indian teams
+        </p>
+    </div>
+</div>
+
+<!-- DEBUG-VIEW ENDED 3 APPPATH/Views/partials/header.php -->
+    
+    <!-- Main Page Content Section -->
+    <main id="mainContent" class="flex-grow">
+        <!-- =========================================================================
+     GROUP HEALTH INSURANCE DETAILS PAGE — HERO SECTION
+     Streamlined conversion hero with subtle team background image layered under
+     footer-derived ambient blue tones, Playfair Display serif headline, trust
+     metrics, and shared get-quote conversion card.
+     ========================================================================= -->
+<section id="groupHealthHero" class="group-health-hero relative overflow-hidden pt-20 sm:pt-22 lg:pt-24 pb-12 sm:pb-16 lg:pb-20 text-white">
+
+<!-- Layer 1: Background image with calibrated 25-35% visibility -->
+    <div class="group-health-hero-bg" style="background-image: url('../assets/images/bg/CollaborativeTeamworkinaBrightOffice.webp');" aria-hidden="true"></div>
+
+    <!-- Layer 2: Footer-derived color overlay with high contrast for left column copy -->
+    <div class="group-health-hero-overlay" aria-hidden="true"></div>
+
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center">
+
+            <!-- LEFT COLUMN: Value Proposition and Trust Metrics -->
+            <div class="lg:col-span-7 xl:col-span-7 flex flex-col justify-center">
+
+                <!-- Eyebrow Pill -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/15 text-white text-caption sm:text-body-sm font-display font-semibold mb-4 sm:mb-5 tracking-wider uppercase w-fit shadow-soft-sm">
+                    <span class="w-2 h-2 rounded-full bg-[#70ee91] animate-pulse" aria-hidden="true"></span>
+                    <span>GROUP HEALTH INSURANCE</span>
+                </div>
+
+                <!-- Main Conversion Headline -->
+                <h1 class="text-[34px] sm:text-[44px] md:text-[50px] lg:text-[52px] xl:text-[58px] font-serif font-normal text-white leading-[1.12] tracking-[-0.025em] mb-4 sm:mb-5 [text-wrap:balance]">
+                    Group health insurance <br class="hidden sm:inline">for <span class="italic font-serif text-[#70ee91] font-normal inline-block">employees</span>
+                </h1>
+
+                <!-- Supporting Copy -->
+                <p class="text-body sm:text-body-lg text-white/85 max-w-xl leading-relaxed mb-6 sm:mb-8 font-normal">
+                    Flexible and comprehensive health insurance for your team — with frictionless claims, less paperwork, and minimal HR dependency.
+                </p>
+
+                <!-- Trust Metrics Row -->
+                <div class="pt-6 sm:pt-8 border-t border-white/15 max-w-xl w-full">
+                    <div class="grid grid-cols-3 gap-2 sm:gap-4">
+                                                    <div class="flex flex-col gap-1 pr-2 sm:pr-4 border-r border-white/15  ">
+                                <div class="flex items-center gap-1.5 text-[#70ee91] mb-1" aria-hidden="true">
+                                                                            <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                        </svg>
+                                                                    </div>
+                                <span class="text-[19px] sm:text-[23px] lg:text-[26px] font-display font-extrabold text-white leading-none tracking-tight">2.6k</span>
+                                <span class="text-[11px] sm:text-[12px] text-white/75 font-medium leading-snug">Gave insurances</span>
+                            </div>
+                                                    <div class="flex flex-col gap-1 pr-2 sm:pr-4 border-r border-white/15 px-2 sm:px-4 ">
+                                <div class="flex items-center gap-1.5 text-[#70ee91] mb-1" aria-hidden="true">
+                                                                            <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                                                    </div>
+                                <span class="text-[19px] sm:text-[23px] lg:text-[26px] font-display font-extrabold text-white leading-none tracking-tight">89+</span>
+                                <span class="text-[11px] sm:text-[12px] text-white/75 font-medium leading-snug">Professional team</span>
+                            </div>
+                                                    <div class="flex flex-col gap-1   pl-2 sm:pl-4">
+                                <div class="flex items-center gap-1.5 text-[#70ee91] mb-1" aria-hidden="true">
+                                                                            <svg class="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                        </svg>
+                                                                    </div>
+                                <span class="text-[19px] sm:text-[23px] lg:text-[26px] font-display font-extrabold text-white leading-none tracking-tight">2.8k</span>
+                                <span class="text-[11px] sm:text-[12px] text-white/75 font-medium leading-snug">Satisfied customers</span>
+                            </div>
+                                            </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Conversion Quote Form Card -->
+            <div class="lg:col-span-5 xl:col-span-5 w-full">
+                <div id="quoteCardContainer" class="group-health-form-card bg-surface rounded-2xl shadow-soft-xl border border-primary-100/80 p-5 sm:p-6 lg:p-6 relative overflow-hidden transition-all duration-300 text-neutral-900">
+                    <!-- DEBUG-VIEW START 1 APPPATH/Views/partials/quote-form.php -->
+<!-- Top Gradient Brand Accent Border -->
+<div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-primary-900 via-logo-purple to-accent-600" aria-hidden="true"></div>
+
+<!-- Card Header -->
+<div id="quoteFormHeader">
+    <h2 class="text-[20px] sm:text-[22px] lg:text-[23px] font-display font-bold text-primary-950 tracking-tight mb-1">
+        Request a custom quote
+    </h2>
+    <p class="text-caption sm:text-body-sm text-neutral-600 mb-3 sm:mb-4">
+        Fill in your details below and an employee benefits specialist will get back to you with tailored pricing.
+    </p>
+</div>
+
+<!-- General Server Alert / Notice -->
+<div id="quoteGeneralAlert" class="hidden mb-3.5 p-3 rounded-xl text-body-sm font-medium" role="alert" aria-live="assertive"></div>
+
+<!-- Quote Form -->
+<form id="quoteForm" action="../get-quote" method="POST" novalidate class="flex flex-col gap-2.5 sm:gap-3">
+    
+    <!-- CSRF Field -->
+    <input type="hidden" name="csrf_test_name" value="d74d13b0217fc856a12ac9b4c8088c15">
+    <!-- Spam Bot Honeypot (hidden from sighted users and screen readers) -->
+    <div class="sr-only" aria-hidden="true">
+        <label for="website_hp">Leave this field blank</label>
+        <input type="text" name="website_hp" id="website_hp" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <!-- Field: Full Name -->
+    <div class="form-group flex flex-col gap-1">
+        <label for="full_name" class="font-display font-semibold text-neutral-800 text-caption sm:text-body-sm">
+            Your Full Name <span class="text-accent-600">*</span>
+        </label>
+        <input 
+            type="text" 
+            id="full_name" 
+            name="full_name" 
+            required 
+            placeholder="e.g. Priya Sharma" 
+            autocomplete="name"
+            class="quote-input w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200"
+            aria-describedby="err_full_name"
+        >
+        <span id="err_full_name" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+    </div>
+
+    <!-- 2-Column Row: Work Email & Phone Number -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+        <!-- Work Email -->
+        <div class="form-group flex flex-col gap-1">
+            <label for="work_email" class="font-display font-semibold text-neutral-800 text-caption sm:text-body-sm">
+                Work Email <span class="text-accent-600">*</span>
+            </label>
+            <input 
+                type="email" 
+                id="work_email" 
+                name="work_email" 
+                required 
+                placeholder="priya@company.com" 
+                autocomplete="email"
+                class="quote-input w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200"
+                aria-describedby="err_work_email"
+            >
+            <span id="err_work_email" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group flex flex-col gap-1">
+            <label for="phone_number" class="font-display font-semibold text-neutral-800 text-caption sm:text-body-sm">
+                Phone Number <span class="text-accent-600">*</span>
+            </label>
+            <input 
+                type="tel" 
+                id="phone_number" 
+                name="phone_number" 
+                required 
+                placeholder="98765 43210" 
+                autocomplete="tel"
+                class="quote-input w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200"
+                aria-describedby="err_phone_number"
+            >
+            <span id="err_phone_number" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+        </div>
+    </div>
+
+    <!-- 2-Column Row: Company Name & Team Size -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+        <!-- Company Name -->
+        <div class="form-group flex flex-col gap-1">
+            <label for="company_name" class="font-display font-semibold text-neutral-800 text-caption sm:text-body-sm">
+                Company Name <span class="text-accent-600">*</span>
+            </label>
+            <input 
+                type="text" 
+                id="company_name" 
+                name="company_name" 
+                required 
+                placeholder="e.g. Acme Tech" 
+                autocomplete="organization"
+                class="quote-input w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200"
+                aria-describedby="err_company_name"
+            >
+            <span id="err_company_name" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+        </div>
+
+        <!-- Team Size Select -->
+        <div class="form-group flex flex-col gap-1">
+            <label for="company_size" class="font-display font-semibold text-neutral-800 text-caption sm:text-body-sm">
+                Team Size <span class="text-accent-600">*</span>
+            </label>
+            <div class="relative">
+                <select 
+                    id="company_size" 
+                    name="company_size" 
+                    required 
+                    class="quote-input w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200 appearance-none pr-10 cursor-pointer"
+                    aria-describedby="err_company_size"
+                >
+                    <option value="">Select team size</option>
+                    <option value="1 - 10 employees">1 - 10 employees (Early stage)</option>
+                    <option value="11 - 50 employees">11 - 50 employees (Growing team)</option>
+                    <option value="51 - 200 employees">51 - 200 employees (Mid size)</option>
+                    <option value="201 - 500 employees">201 - 500 employees (Enterprise)</option>
+                    <option value="500+ employees">500+ employees (Large team)</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-neutral-500" aria-hidden="true">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+            </div>
+            <span id="err_company_size" class="field-error-msg hidden text-[12px] text-accent-600 font-medium" role="alert"></span>
+        </div>
+    </div>
+
+    <!-- Optional Message / Requirements -->
+    <div class="form-group flex flex-col gap-1">
+        <label for="message" class="font-display font-semibold text-neutral-800 text-caption sm:text-body-sm flex items-center justify-between">
+            <span>Specific Coverage Needs or Renewal Date</span>
+            <span class="text-neutral-400 font-normal text-[11px] sm:text-[12px]">Optional</span>
+        </label>
+        <textarea 
+            id="message" 
+            name="message" 
+            rows="2" 
+            placeholder="Tell us if you have an existing policy expiring, parent cover requirements, or wellness preferences..." 
+            class="quote-input w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-lg border border-neutral-300 bg-white text-neutral-900 text-body-sm placeholder-neutral-400 focus:outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-600/20 transition-all duration-200 resize-y"
+        ></textarea>
+    </div>
+
+    <!-- Primary Red Submit Button with Project Hover Sweep Effect -->
+    <div class="pt-1">
+        <button 
+            type="submit" 
+            id="quoteSubmitBtn" 
+            class="btn-primary btn-sweep btn-sweep--purple w-full justify-center !rounded-btn !py-2.5 sm:!py-3 !px-6 !text-body-sm sm:!text-body font-display font-bold shadow-glow-accent cursor-pointer transition-transform"
+        >
+            <span>Get custom quote</span>
+            <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Privacy & Guarantee Footnote -->
+    <p class="text-[11px] sm:text-[12px] text-neutral-500 text-center mt-0.5 leading-relaxed">
+        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 align-middle" aria-hidden="true"></span>
+        Zero spam guarantee. Your details are safe and used solely to prepare your customized insurance quote.
+    </p>
+
+</form>
+
+<!-- Interactive Success State (Displayed upon submission) -->
+<div id="quoteSuccessState" class="hidden flex-col items-center text-center py-5 sm:py-6" role="status" aria-live="polite">
+    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center mb-4 sm:mb-5 shadow-soft-sm" aria-hidden="true">
+        <svg class="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+        </svg>
+    </div>
+
+    <h3 class="text-h4 sm:text-h3 font-display font-bold text-primary-950 mb-1.5 sm:mb-2">
+        Quote Request Received!
+    </h3>
+
+    <p id="quoteSuccessMessageText" class="text-body-sm sm:text-body text-neutral-600 max-w-md mb-5 sm:mb-6 leading-relaxed">
+        Thank you! Our employee benefits specialist has received your requirements and will reach out shortly.
+    </p>
+
+    <!-- Next Steps Reassurance Box -->
+    <div class="w-full bg-primary-50/70 border border-primary-100/80 rounded-xl p-3.5 sm:p-5 mb-5 sm:mb-6 text-left">
+        <div class="font-display font-bold text-primary-950 text-body-sm mb-1 flex items-center gap-2">
+            <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>What happens next</span>
+        </div>
+        <p class="text-neutral-600 text-caption sm:text-body-sm leading-relaxed m-0">
+            We will compare group policy options across leading underwriters for your team size, evaluate cashless hospital network density near your team's locations, and deliver a clear side-by-side proposal.
+        </p>
+    </div>
+
+    <a href="../" class="btn-secondary !rounded-btn !py-2.5 !px-6 text-body-sm">
+        <span>Return to Moxman home</span>
+    </a>
+</div>
+
+<!-- DEBUG-VIEW ENDED 1 APPPATH/Views/partials/quote-form.php -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Content Sections Following the Hero -->
+<!-- DEBUG-VIEW START 2 APPPATH/Views/partials/group-health-sections.php -->
+
+<!-- =========================================================================
+     SECTION 1: WHAT IS GROUP HEALTH INSURANCE
+     Light white design matching reference: soft organic blobs, policy overview pill,
+     serif headline with accent italic word and gold underline bar, and 3-card diagram.
+     ========================================================================= -->
+<section id="what-is-group-health" class="ghi-overview-white py-16 sm:py-20 lg:py-28 relative overflow-hidden" aria-labelledby="heading-what-is-ghi">
+    <!-- Decorative background organic blobs in soft tint -->
+    <!-- Top-Right Rounded Blob -->
+    <div class="ghi-blob ghi-blob-top-right absolute -top-16 -right-16 sm:-top-24 sm:-right-24 lg:-top-32 lg:-right-32 w-72 h-72 sm:w-96 sm:h-96 lg:w-[480px] lg:h-[480px] pointer-events-none -z-0" aria-hidden="true">
+        <svg viewBox="0 0 500 500" class="w-full h-full text-[var(--color-ghi-s1-blob)]" fill="currentColor">
+            <path d="M421.5,291.5Q373,333,336.5,373Q300,413,248,427Q196,441,154,407Q112,373,81,326.5Q50,280,63,227Q76,174,107,126Q138,78,194,62.5Q250,47,308,61.5Q366,76,418,118Q470,160,470,205Q470,250,421.5,291.5Z" />
+        </svg>
+    </div>
+    <!-- Bottom-Left Wave-like Blob -->
+    <div class="ghi-blob ghi-blob-bottom-left absolute -bottom-12 -left-12 sm:-bottom-16 sm:-left-16 lg:-bottom-20 lg:-left-20 w-80 h-80 sm:w-[420px] sm:h-[420px] lg:w-[540px] lg:h-[540px] pointer-events-none -z-0" aria-hidden="true">
+        <svg viewBox="0 0 600 600" class="w-full h-full text-[var(--color-ghi-s1-blob-wave)]" fill="currentColor">
+            <path d="M0,450 C120,420 180,480 300,440 C420,400 480,320 540,360 C580,387 600,430 600,600 L0,600 Z" />
+            <path d="M0,500 C100,470 160,530 260,490 C360,450 440,390 500,420 C540,440 580,500 600,600 L0,600 Z" opacity="0.6"/>
+        </svg>
+    </div>
+
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <!-- Left Column: Copy -->
+            <div class="lg:col-span-6 flex flex-col justify-center" data-reveal="left">
+                <!-- Pill: POLICY OVERVIEW -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-ghi-s1-accent-tint)] border border-[var(--color-ghi-s1-pill-border)] text-[var(--color-ghi-s1-title)] text-caption font-display font-bold uppercase tracking-wider mb-5 shadow-soft-xs w-fit">
+                    <span class="w-2 h-2 rounded-full bg-[var(--color-ghi-s1-gold)]" aria-hidden="true"></span>
+                    <span>POLICY OVERVIEW</span>
+                </div>
+
+                <!-- Title -->
+                <h2 id="heading-what-is-ghi" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-[var(--color-ghi-s1-title)] tracking-[-0.025em] leading-[1.18] mb-4">
+                    What is group health insurance for <span class="italic font-serif text-[var(--color-ghi-s1-accent)] font-normal">employees</span><span class="text-[var(--color-ghi-s1-title)]">?</span>
+                </h2>
+
+                <!-- Short gold bar under title -->
+                <div class="w-20 h-1 rounded-full bg-[var(--color-ghi-s1-gold)] mb-6" aria-hidden="true"></div>
+
+                <!-- Paragraph -->
+                <p class="text-body sm:text-body-lg text-[var(--color-ghi-s1-desc)] leading-relaxed font-normal max-w-[560px]">
+                    A group health insurance policy is a single master policy that a company buys to cover its employees against medical and hospital costs. Many employers extend it to spouses, children and parents as well. The company manages one policy for everyone, instead of each person buying their own.
+                </p>
+            </div>
+
+            <!-- Right Column: Three-Step Diagram Panel -->
+            <div class="lg:col-span-6 flex justify-center lg:justify-end">
+                <div class="ghi-diagram-panel w-full max-w-xl p-5 sm:p-7 lg:p-8 rounded-[28px] bg-[var(--color-ghi-s1-panel-bg)] border border-[var(--color-ghi-s1-panel-border)] shadow-[var(--color-ghi-s1-panel-shadow)]">
+                    <div class="flex flex-col items-center">
+                        
+                        <!-- Card 1: Employer -->
+                        <div class="ghi-diagram-card ghi-card-1 w-full p-4 sm:p-5 rounded-2xl bg-[var(--color-ghi-s1-card-bg)] border border-[var(--color-ghi-s1-card-border)] shadow-[var(--color-ghi-s1-card-shadow)] flex items-center gap-4">
+                            <div class="ghi-card-chip w-12 h-12 rounded-xl bg-[var(--color-ghi-s1-accent-tint)] flex items-center justify-center flex-shrink-0 text-[var(--color-ghi-s1-accent)]">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                </svg>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="text-base sm:text-lg font-display font-bold text-[var(--color-ghi-s1-card-title)] tracking-tight">Employer</h3>
+                                <p class="text-caption sm:text-body-sm text-[var(--color-ghi-s1-desc)] mt-0.5 leading-snug">Buys and centrally sponsors one comprehensive contract</p>
+                            </div>
+                        </div>
+
+                        <!-- Connector Down Arrow 1 -->
+                        <div class="ghi-diagram-arrow ghi-arrow-1 py-3 text-[var(--color-ghi-s1-accent)] flex justify-center" aria-hidden="true">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                            </svg>
+                        </div>
+
+                        <!-- Card 2: One Master Policy (Emphasized) -->
+                        <div class="ghi-diagram-card ghi-card-2 w-full p-4 sm:p-5 rounded-2xl bg-[var(--color-ghi-s1-card-mid-bg)] border border-[var(--color-ghi-s1-card-border)] shadow-[var(--color-ghi-s1-card-shadow)] flex items-center gap-4">
+                            <div class="ghi-card-chip w-12 h-12 rounded-xl bg-[var(--color-ghi-s1-accent-tint)] flex items-center justify-center flex-shrink-0 text-[var(--color-ghi-s1-accent)]">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div class="min-w-0">
+                                <span class="ghi-card-badge inline-flex items-center px-2 py-0.5 rounded text-[10px] font-display font-bold uppercase tracking-wider bg-[var(--color-ghi-s1-badge-bg)] text-[var(--color-ghi-s1-badge-text)] mb-1">Single Contract</span>
+                                <h3 class="text-base sm:text-lg font-display font-bold text-[var(--color-ghi-s1-card-title)] tracking-tight">One Master Policy</h3>
+                                <p class="text-caption sm:text-body-sm text-[var(--color-ghi-s1-desc)] mt-0.5 leading-snug">Unified terms, cashless networks, and claims administration</p>
+                            </div>
+                        </div>
+
+                        <!-- Connector Down Arrow 2 -->
+                        <div class="ghi-diagram-arrow ghi-arrow-2 py-3 text-[var(--color-ghi-s1-accent)] flex justify-center" aria-hidden="true">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                            </svg>
+                        </div>
+
+                        <!-- Card 3: Employees and their families -->
+                        <div class="ghi-diagram-card ghi-card-3 w-full p-4 sm:p-5 rounded-2xl bg-[var(--color-ghi-s1-card-bg)] border border-[var(--color-ghi-s1-card-border)] shadow-[var(--color-ghi-s1-card-shadow)] flex items-center gap-4">
+                            <div class="ghi-card-chip w-12 h-12 rounded-xl bg-[var(--color-ghi-s1-accent-tint)] flex items-center justify-center flex-shrink-0 text-[var(--color-ghi-s1-accent)]">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="text-base sm:text-lg font-display font-bold text-[var(--color-ghi-s1-card-title)] tracking-tight">Employees and their families</h3>
+                                <p class="text-caption sm:text-body-sm text-[var(--color-ghi-s1-desc)] mt-0.5 leading-snug">Cover extended to spouses, children and parents</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 2: WHAT DOES MOXMAN DO
+     Soft light surface (#f6f8fd) with 3 prominent audience pills.
+     ========================================================================= -->
+<section id="what-moxman-does" class="py-16 sm:py-20 lg:py-24 bg-[var(--color-ghi-surface-light)] border-t border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-main)]" aria-labelledby="heading-what-moxman-does">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-muted)] text-caption font-display font-semibold uppercase tracking-wider mb-4 shadow-soft-xs">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-accent-600)]"></span>
+                <span>Our Role</span>
+            </div>
+            
+            <h2 id="heading-what-moxman-does" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-[var(--color-ghi-text-main)] tracking-[-0.025em] leading-[1.18] mb-5">
+                What does <span class="italic font-serif text-[var(--color-ghi-gold-dark)] font-normal">Moxman</span> do?
+            </h2>
+            
+            <p class="text-body sm:text-body-lg text-[var(--color-ghi-text-muted)] leading-relaxed mb-8">
+                Moxman helps Indian companies set up and run group health cover for their teams. We tailor the plan to your people, onboard your employees digitally, issue health cards and support claims. Your HR team gets one dashboard to manage it all.
+            </p>
+
+            <!-- Three Small Pills: Employers, Employees, Families -->
+            <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4" data-reveal="batch">
+                <div class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm text-sm sm:text-body font-display font-bold text-[var(--color-ghi-text-main)]">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-footer-blue-base)]" aria-hidden="true"></span>
+                    <span>Employers</span>
+                </div>
+                <div class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm text-sm sm:text-body font-display font-bold text-[var(--color-ghi-text-main)]">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-footer-blue-ambient)]" aria-hidden="true"></span>
+                    <span>Employees</span>
+                </div>
+                <div class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm text-sm sm:text-body font-display font-bold text-[var(--color-ghi-text-main)]">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-accent-600)]" aria-hidden="true"></span>
+                    <span>Families</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 3: WHY OFFER IT
+     Accessible tab toggle for two audiences: "For employers" and "For employees".
+     Keyboard-friendly (Arrow keys, Home, End, Enter, Space).
+     ========================================================================= -->
+<section id="why-offer-it" class="py-16 sm:py-20 lg:py-24 bg-white border-t border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-main)]" aria-labelledby="heading-why-offer-it">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-ghi-surface-alt)] border border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-muted)] text-caption font-display font-semibold uppercase tracking-wider mb-4">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-ghi-gold-dark)]"></span>
+                <span>The Value Proposition</span>
+            </div>
+            <h2 id="heading-why-offer-it" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-[var(--color-ghi-text-main)] tracking-[-0.025em] leading-[1.18] mb-4">
+                Why a group health policy is <span class="italic font-serif text-[var(--color-ghi-gold-dark)] font-normal">worth it</span>
+            </h2>
+            
+            <!-- Accessible Tab Switcher (tablist) -->
+            <div class="inline-flex p-1.5 rounded-full bg-[var(--color-ghi-surface-alt)] border border-[var(--color-ghi-border-light)] mt-2" role="tablist" aria-label="Benefits by Audience">
+                <button 
+                    type="button" 
+                    role="tab" 
+                    id="tab-employers" 
+                    aria-selected="true" 
+                    aria-controls="panel-employers" 
+                    tabindex="0" 
+                    class="ghi-tab-btn px-5 sm:px-6 py-2.5 rounded-full font-display font-bold text-caption sm:text-body-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)]"
+                >
+                    For employers
+                </button>
+                <button 
+                    type="button" 
+                    role="tab" 
+                    id="tab-employees" 
+                    aria-selected="false" 
+                    aria-controls="panel-employees" 
+                    tabindex="-1" 
+                    class="ghi-tab-btn px-5 sm:px-6 py-2.5 rounded-full font-display font-bold text-caption sm:text-body-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)]"
+                >
+                    For employees
+                </button>
+            </div>
+        </div>
+
+        <!-- Panel 1: For Employers -->
+        <div id="panel-employers" role="tabpanel" aria-labelledby="tab-employers" tabindex="0" class="ghi-tab-panel">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8" data-reveal="batch">
+                
+                <!-- Card 1 -->
+                <div class="p-6 sm:p-8 rounded-2xl bg-[var(--color-ghi-surface-light)] border border-[var(--color-ghi-border-light)] shadow-soft-sm flex flex-col justify-between hover:shadow-soft-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-white border border-[var(--color-ghi-border-light)] flex items-center justify-center text-[var(--color-footer-blue-base)] mb-5 shadow-soft-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2.5">Attract and retain talent</h3>
+                        <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">
+                            Good health cover is one of the benefits people look at first when comparing offers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 sm:p-8 rounded-2xl bg-[var(--color-ghi-surface-light)] border border-[var(--color-ghi-border-light)] shadow-soft-sm flex flex-col justify-between hover:shadow-soft-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-white border border-[var(--color-ghi-border-light)] flex items-center justify-center text-[var(--color-footer-blue-base)] mb-5 shadow-soft-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2.5">A caring workplace</h3>
+                        <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">
+                            Showing that you look after your people and their families builds trust and loyalty.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-6 sm:p-8 rounded-2xl bg-[var(--color-ghi-surface-light)] border border-[var(--color-ghi-border-light)] shadow-soft-sm flex flex-col justify-between hover:shadow-soft-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-white border border-[var(--color-ghi-border-light)] flex items-center justify-center text-[var(--color-footer-blue-base)] mb-5 shadow-soft-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2.5">A tax-efficient benefit</h3>
+                        <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">
+                            Employer-paid premiums are generally treated as a business expense. Confirm with your tax advisor.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Panel 2: For Employees -->
+        <div id="panel-employees" role="tabpanel" aria-labelledby="tab-employees" tabindex="0" class="ghi-tab-panel hidden">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Card 1 -->
+                <div class="p-6 sm:p-8 rounded-2xl bg-[var(--color-ghi-surface-light)] border border-[var(--color-ghi-border-light)] shadow-soft-sm flex flex-col justify-between hover:shadow-soft-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-white border border-[var(--color-ghi-border-light)] flex items-center justify-center text-[var(--color-footer-blue-base)] mb-5 shadow-soft-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2.5">Easier claims</h3>
+                        <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">
+                            Cashless treatment at network hospitals means less paperwork and less out-of-pocket stress.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 sm:p-8 rounded-2xl bg-[var(--color-ghi-surface-light)] border border-[var(--color-ghi-border-light)] shadow-soft-sm flex flex-col justify-between hover:shadow-soft-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-white border border-[var(--color-ghi-border-light)] flex items-center justify-center text-[var(--color-footer-blue-base)] mb-5 shadow-soft-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2.5">Family cover</h3>
+                        <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">
+                            Spouse, children and, with many plans, parents can be included.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-6 sm:p-8 rounded-2xl bg-[var(--color-ghi-surface-light)] border border-[var(--color-ghi-border-light)] shadow-soft-sm flex flex-col justify-between hover:shadow-soft-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-white border border-[var(--color-ghi-border-light)] flex items-center justify-center text-[var(--color-footer-blue-base)] mb-5 shadow-soft-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2.5">Care beyond the hospital</h3>
+                        <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">
+                            Health checkups, tele-consultations and wellness support add everyday value.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 4: HOW IT WORKS
+     Deep blue band (#121736) with a 6-step flow timeline (no numbers).
+     Contained first and last items.
+     ========================================================================= -->
+<section id="how-it-works-ghi" class="py-16 sm:py-20 lg:py-24 bg-[var(--color-footer-blue-deep)] text-white relative overflow-hidden" aria-labelledby="heading-how-it-works">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="max-w-3xl mx-auto text-center mb-12 sm:mb-16" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-white/90 text-caption font-display font-semibold uppercase tracking-wider mb-4">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-champagne)]"></span>
+                <span>Operational Flow</span>
+            </div>
+            <h2 id="heading-how-it-works" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-white tracking-[-0.025em] leading-[1.18] mb-4">
+                How group health insurance works in <span class="italic font-serif text-[var(--color-champagne)] font-normal">India</span>
+            </h2>
+            <p class="text-body sm:text-body-lg text-white/80 leading-relaxed font-normal">
+                The employer buys one master policy. Every enrolled employee gets the same core cover, and the company usually pays the premium. Cover generally continues while the person works there.
+            </p>
+        </div>
+
+        <!-- 6 Steps Timeline Flow Grid (No numeric numbering) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" data-reveal="batch">
+            
+            <!-- Step 1 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white/[0.06] border border-white/15 backdrop-blur-sm flex flex-col justify-between hover:bg-white/[0.09] transition-colors">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center mb-5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-white tracking-tight mb-2">Share your team details</h3>
+                    <p class="text-body-sm text-white/75 leading-relaxed font-normal">
+                        headcount, locations and what matters to your people.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white/[0.06] border border-white/15 backdrop-blur-sm flex flex-col justify-between hover:bg-white/[0.09] transition-colors">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center mb-5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-white tracking-tight mb-2">Get a tailored plan</h3>
+                    <p class="text-body-sm text-white/75 leading-relaxed font-normal">
+                        we shape cover, limits and add-ons around your team.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white/[0.06] border border-white/15 backdrop-blur-sm flex flex-col justify-between hover:bg-white/[0.09] transition-colors">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center mb-5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-white tracking-tight mb-2">Onboard your roster</h3>
+                    <p class="text-body-sm text-white/75 leading-relaxed font-normal">
+                        upload the employee list once and we handle the enrolment.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white/[0.06] border border-white/15 backdrop-blur-sm flex flex-col justify-between hover:bg-white/[0.09] transition-colors">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center mb-5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-white tracking-tight mb-2">Digital health cards</h3>
+                    <p class="text-body-sm text-white/75 leading-relaxed font-normal">
+                        employees and their families get their cards online.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white/[0.06] border border-white/15 backdrop-blur-sm flex flex-col justify-between hover:bg-white/[0.09] transition-colors">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center mb-5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-white tracking-tight mb-2">Claims support</h3>
+                    <p class="text-body-sm text-white/75 leading-relaxed font-normal">
+                        help with cashless admissions and reimbursements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white/[0.06] border border-white/15 backdrop-blur-sm flex flex-col justify-between hover:bg-white/[0.09] transition-colors">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center mb-5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-display font-bold text-white tracking-tight mb-2">Smooth renewal</h3>
+                    <p class="text-body-sm text-white/75 leading-relaxed font-normal">
+                        review the plan each year and adjust as the team grows.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 5: PREMIUM FACTORS
+     Soft light surface (#f6f8fd) with 6 factors and "Get a custom quote" CTA.
+     No calculator, no sample prices.
+     ========================================================================= -->
+<section id="premium-factors" class="py-16 sm:py-20 lg:py-24 bg-[var(--color-ghi-surface-light)] border-t border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-main)]" aria-labelledby="heading-premium-factors">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-muted)] text-caption font-display font-semibold uppercase tracking-wider mb-4 shadow-soft-xs">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-footer-blue-base)]"></span>
+                <span>Pricing Drivers</span>
+            </div>
+            <h2 id="heading-premium-factors" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-[var(--color-ghi-text-main)] tracking-[-0.025em] leading-[1.18] mb-4">
+                What shapes your <span class="italic font-serif text-[var(--color-ghi-gold-dark)] font-normal">premium</span>
+            </h2>
+            <p class="text-body sm:text-body-lg text-[var(--color-ghi-text-muted)] leading-relaxed">
+                There is no single price for group health cover. These are the things that move it.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12" data-reveal="batch">
+            
+            <!-- Factor 1 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Team size</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">larger groups can give more flexibility.</p>
+            </div>
+
+            <!-- Factor 2 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Age mix of your team</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">the age profile of employees and dependants.</p>
+            </div>
+
+            <!-- Factor 3 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Sum insured</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">the amount of cover per person or per family.</p>
+            </div>
+
+            <!-- Factor 4 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Family and parents cover</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">who is included beyond the employee.</p>
+            </div>
+
+            <!-- Factor 5 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Maternity and add-ons</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">maternity benefits, OPD, wellness and similar extras.</p>
+            </div>
+
+            <!-- Factor 6 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Claims history</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">past claims at renewal.</p>
+            </div>
+
+        </div>
+
+        <!-- CTA Action -->
+        <div class="text-center" data-reveal="up">
+            <a href="../get-quote" class="btn-primary !rounded-full !px-8 !py-3.5 font-display font-bold text-body-sm text-white shadow-soft-md hover:shadow-lg active:scale-[0.98] transition-all inline-flex items-center gap-2">
+                <span>Get a custom quote</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 6: GROUP VS INDIVIDUAL
+     Comparison table with <table>, <th>, <td>.
+     Horizontal-scroll container on mobile without widening the page.
+     ========================================================================= -->
+<section id="group-vs-individual" class="py-16 sm:py-20 lg:py-24 bg-white border-t border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-main)]" aria-labelledby="heading-comparison">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-ghi-surface-alt)] border border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-muted)] text-caption font-display font-semibold uppercase tracking-wider mb-4">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-footer-blue-base)]"></span>
+                <span>Side-by-Side Analysis</span>
+            </div>
+            <h2 id="heading-comparison" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-[var(--color-ghi-text-main)] tracking-[-0.025em] leading-[1.18] mb-4">
+                Group vs individual health insurance: <span class="italic font-serif text-[var(--color-ghi-gold-dark)] font-normal">what's different</span>
+            </h2>
+        </div>
+
+        <!-- Real <table> in scrollable wrapper -->
+        <div class="w-full overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0" data-reveal="up">
+            <div class="min-w-[640px] rounded-2xl border border-[var(--color-ghi-border-light)] overflow-hidden shadow-soft-sm bg-white">
+                <table class="w-full text-left border-collapse ghi-comparison-table">
+                    <thead>
+                        <tr class="bg-[var(--color-footer-blue-base)] text-white">
+                            <th scope="col" class="py-4 px-6 text-body-sm font-display font-bold uppercase tracking-wider w-1/3">Feature</th>
+                            <th scope="col" class="py-4 px-6 text-body-sm font-display font-bold uppercase tracking-wider w-1/3">Group policy</th>
+                            <th scope="col" class="py-4 px-6 text-body-sm font-display font-bold uppercase tracking-wider w-1/3">Individual policy</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-[var(--color-ghi-border-light)] text-body-sm">
+                        <tr>
+                            <th scope="row" class="py-4 px-6 font-display font-bold text-[var(--color-ghi-text-main)]">Who buys it</th>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">The employer</td>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Each person</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 px-6 font-display font-bold text-[var(--color-ghi-text-main)]">Who pays</th>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Usually the employer</td>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">The individual</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 px-6 font-display font-bold text-[var(--color-ghi-text-main)]">Family cover</th>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Often extended to dependants</td>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Chosen per policy</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 px-6 font-display font-bold text-[var(--color-ghi-text-main)]">Pre-existing conditions</th>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Often covered from the start, depending on the plan</td>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Usually subject to waiting periods</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 px-6 font-display font-bold text-[var(--color-ghi-text-main)]">Waiting periods</th>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Often waived or reduced</td>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Common</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 px-6 font-display font-bold text-[var(--color-ghi-text-main)]">Paperwork</th>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">One policy, one process</td>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">One per person</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 px-6 font-display font-bold text-[var(--color-ghi-text-main)]">Renewal</th>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Handled by the company</td>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Handled by the individual</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 px-6 font-display font-bold text-[var(--color-ghi-text-main)]">Continuity</th>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Tied to employment</td>
+                            <td class="py-4 px-6 text-[var(--color-ghi-text-muted)]">Stays with the person</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p class="text-caption text-[var(--color-ghi-text-subtle)] mt-3">Terms vary by insurer and plan.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 7: WHAT A GOOD PLAN INCLUDES
+     Soft light surface (#f6f8fd) with 6 core coverage items & footnote.
+     ========================================================================= -->
+<section id="what-plan-includes" class="py-16 sm:py-20 lg:py-24 bg-[var(--color-ghi-surface-light)] border-t border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-main)]" aria-labelledby="heading-plan-includes">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-muted)] text-caption font-display font-semibold uppercase tracking-wider mb-4 shadow-soft-xs">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-footer-blue-ambient)]"></span>
+                <span>Standard Coverage</span>
+            </div>
+            <h2 id="heading-plan-includes" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-[var(--color-ghi-text-main)] tracking-[-0.025em] leading-[1.18] mb-4">
+                What a good group plan <span class="italic font-serif text-[var(--color-ghi-gold-dark)] font-normal">includes</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-6" data-reveal="batch">
+            
+            <!-- Item 1 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Pre-existing conditions</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">covered from the start, depending on the plan.</p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Reduced waiting periods</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">common waiting periods are often waived for the group.</p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Pre- and post-hospitalisation</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">costs before admission and after discharge.</p>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Cashless treatment</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">no upfront payment at network hospitals.</p>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Maternity benefits</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">available as part of the plan, and often added as an extra.</p>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="p-6 sm:p-7 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-10 h-10 rounded-xl bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                </div>
+                <h3 class="text-lg font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2">Parents and dependants</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">optional add-on cover for the wider family.</p>
+            </div>
+
+        </div>
+
+        <p class="text-caption text-center text-[var(--color-ghi-text-subtle)] mt-4">Terms vary by insurer and plan.</p>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 8: WHO IT'S FOR
+     3 Cards for Company Stages with direct "Get a quote" links to /get-quote.
+     ========================================================================= -->
+<section id="who-its-for" class="py-16 sm:py-20 lg:py-24 bg-white border-t border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-main)]" aria-labelledby="heading-who-its-for">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-ghi-surface-alt)] border border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-muted)] text-caption font-display font-semibold uppercase tracking-wider mb-4">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-accent-600)]"></span>
+                <span>Team Scale</span>
+            </div>
+            <h2 id="heading-who-its-for" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-[var(--color-ghi-text-main)] tracking-[-0.025em] leading-[1.18] mb-4">
+                Built for teams at <span class="italic font-serif text-[var(--color-ghi-gold-dark)] font-normal">every stage</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8" data-reveal="batch">
+            
+            <!-- Stage 1 -->
+            <div class="p-7 sm:p-8 rounded-2xl bg-[var(--color-ghi-surface-light)] border border-[var(--color-ghi-border-light)] shadow-soft-sm flex flex-col justify-between hover:shadow-soft-md transition-all group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-white border border-[var(--color-ghi-border-light)] flex items-center justify-center text-[var(--color-footer-blue-base)] mb-5 shadow-soft-xs">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2.5">Early-stage startups</h3>
+                    <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed mb-6">
+                        Start with solid core cover that you can scale as the team grows.
+                    </p>
+                </div>
+                <div>
+                    <a href="../get-quote" class="inline-flex items-center gap-1.5 font-display font-bold text-caption text-[var(--color-accent-600)] hover:text-[var(--color-accent-700)] group-hover:gap-2 transition-all">
+                        <span>Get a quote</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="p-7 sm:p-8 rounded-2xl bg-[var(--color-ghi-surface-light)] border border-[var(--color-ghi-border-light)] shadow-soft-sm flex flex-col justify-between hover:shadow-soft-md transition-all group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-white border border-[var(--color-ghi-border-light)] flex items-center justify-center text-[var(--color-footer-blue-base)] mb-5 shadow-soft-xs">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2.5">Growing companies</h3>
+                    <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed mb-6">
+                        Add family cover, maternity and wellness benefits as your needs expand.
+                    </p>
+                </div>
+                <div>
+                    <a href="../get-quote" class="inline-flex items-center gap-1.5 font-display font-bold text-caption text-[var(--color-accent-600)] hover:text-[var(--color-accent-700)] group-hover:gap-2 transition-all">
+                        <span>Get a quote</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="p-7 sm:p-8 rounded-2xl bg-[var(--color-ghi-surface-light)] border border-[var(--color-ghi-border-light)] shadow-soft-sm flex flex-col justify-between hover:shadow-soft-md transition-all group">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-white border border-[var(--color-ghi-border-light)] flex items-center justify-center text-[var(--color-footer-blue-base)] mb-5 shadow-soft-xs">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-2.5">Large organisations</h3>
+                    <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed mb-6">
+                        Run a bigger, more varied workforce from one platform with HR-level controls.
+                    </p>
+                </div>
+                <div>
+                    <a href="../get-quote" class="inline-flex items-center gap-1.5 font-display font-bold text-caption text-[var(--color-accent-600)] hover:text-[var(--color-accent-700)] group-hover:gap-2 transition-all">
+                        <span>Get a quote</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 9: POINTS TO CHECK BEFORE YOU BUY
+     Soft light surface (#f6f8fd) with 7 essential evaluation criteria.
+     ========================================================================= -->
+<section id="points-to-check" class="py-16 sm:py-20 lg:py-24 bg-[var(--color-ghi-surface-light)] border-t border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-main)]" aria-labelledby="heading-points-to-check">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-muted)] text-caption font-display font-semibold uppercase tracking-wider mb-4 shadow-soft-xs">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-footer-blue-base)]"></span>
+                <span>Buyer's Checklist</span>
+            </div>
+            <h2 id="heading-points-to-check" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-[var(--color-ghi-text-main)] tracking-[-0.025em] leading-[1.18] mb-4">
+                Points to check before you <span class="italic font-serif text-[var(--color-ghi-gold-dark)] font-normal">buy</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" data-reveal="batch">
+            
+            <!-- Check 1 -->
+            <div class="p-6 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-9 h-9 rounded-lg bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-3.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h3 class="text-base font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-1.5">Sum insured</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">is it enough for today's hospital costs?</p>
+            </div>
+
+            <!-- Check 2 -->
+            <div class="p-6 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-9 h-9 rounded-lg bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-3.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h3 class="text-base font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-1.5">Room rent and sub-limits</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">do they restrict where employees can be treated?</p>
+            </div>
+
+            <!-- Check 3 -->
+            <div class="p-6 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-9 h-9 rounded-lg bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-3.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h3 class="text-base font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-1.5">Maternity cover</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">what is included and from when?</p>
+            </div>
+
+            <!-- Check 4 -->
+            <div class="p-6 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-9 h-9 rounded-lg bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-3.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h3 class="text-base font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-1.5">Parents and dependants</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">can they be added, and at what cost?</p>
+            </div>
+
+            <!-- Check 5 -->
+            <div class="p-6 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-9 h-9 rounded-lg bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-3.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h3 class="text-base font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-1.5">Network hospitals</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">are the hospitals your people use cashless?</p>
+            </div>
+
+            <!-- Check 6 -->
+            <div class="p-6 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow">
+                <div class="w-9 h-9 rounded-lg bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-3.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h3 class="text-base font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-1.5">Claims support</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">who helps your employees when they need it?</p>
+            </div>
+
+            <!-- Check 7 -->
+            <div class="p-6 rounded-2xl bg-white border border-[var(--color-ghi-border-light)] shadow-soft-sm hover:shadow-soft-md transition-shadow sm:col-span-2 lg:col-span-1">
+                <div class="w-9 h-9 rounded-lg bg-[var(--color-ghi-surface-alt)] text-[var(--color-footer-blue-base)] flex items-center justify-center mb-3.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h3 class="text-base font-display font-bold text-[var(--color-ghi-text-main)] tracking-tight mb-1.5">Renewal terms</h3>
+                <p class="text-body-sm text-[var(--color-ghi-text-muted)] leading-relaxed">how are changes handled each year?</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 10: WHY CHOOSE MOXMAN (SHOWCASE MOMENT — HIGHEST VISUAL WEIGHT)
+     Deep majestic dark blue canvas (#121736) with atmospheric lighting,
+     floating laptop displaying HR command dashboard, 6 capability cards, and CTA button.
+     ========================================================================= -->
+<section id="why-choose-moxman" class="py-20 sm:py-24 lg:py-28 bg-[var(--color-footer-blue-deep)] text-white relative overflow-hidden" aria-labelledby="heading-why-moxman">
+    <!-- Ambient Blue Bloom behind Section -->
+    <div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(ellipse_75%_65%_at_50%_35%,var(--color-footer-blue-ambient)_0%,transparent_70%)]" aria-hidden="true"></div>
+
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14 sm:mb-16" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-white text-caption font-display font-semibold uppercase tracking-wider mb-4 shadow-sm backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-champagne)] animate-pulse"></span>
+                <span>The Moxman Difference</span>
+            </div>
+            <h2 id="heading-why-moxman" class="text-[32px] sm:text-[40px] lg:text-[48px] font-serif font-normal text-white tracking-[-0.025em] leading-[1.15] mb-5">
+                Why teams choose <span class="italic font-serif text-[var(--color-champagne)] font-normal">Moxman</span>
+            </h2>
+        </div>
+
+        <!-- Two Column Showcase Stage: Floating Laptop Frame + 6 Capability Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-14">
+            
+            <!-- Left Column: Realistic Floating Laptop Frame with Dashboard Screen -->
+            <div class="lg:col-span-6 w-full flex justify-center" data-reveal="left">
+                <div class="laptop-floating-unit max-w-[620px] w-full">
+                    <!-- Floating Laptop Device Body -->
+                    <div class="laptop-floating-body">
+                        <!-- Laptop Screen Lid -->
+                        <div class="laptop-screen-bezel p-2 sm:p-2.5 relative">
+                            <!-- Camera Dot -->
+                            <div class="laptop-camera-dot" aria-hidden="true"></div>
+                            
+                            <!-- Screen Display -->
+                            <div class="laptop-display overflow-hidden rounded-md bg-neutral-950 aspect-[16/10] relative shadow-2xl">
+                                <img 
+                                    src="../assets/images/dashboard/hr-dashboard.webp" 
+                                    alt="Moxman Employer HR Dashboard displaying real-time employee enrolment, coverage suites, and claims status" 
+                                    width="1600" 
+                                    height="1000" 
+                                    loading="lazy" 
+                                    decoding="async" 
+                                    class="w-full h-full object-cover"
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Laptop Aluminum Keyboard Base with Center Notch -->
+                        <div class="laptop-base flex items-center justify-center">
+                            <div class="laptop-notch" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+                    <!-- Detached Soft Shadow Below Laptop -->
+                    <div class="laptop-floating-shadow" aria-hidden="true"></div>
+                </div>
+            </div>
+
+            <!-- Right Column: 6 Items List Grid -->
+            <div class="lg:col-span-6 flex flex-col gap-4 sm:gap-5" data-reveal="right">
+                
+                <!-- Item 1 -->
+                <div class="p-4 sm:p-5 rounded-xl bg-white/[0.06] border border-white/12 backdrop-blur-sm flex items-start gap-4 hover:bg-white/[0.09] transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-display font-bold text-white tracking-tight">Flexible, tailor-made coverage</h3>
+                        <p class="text-caption sm:text-body-sm text-white/75 mt-1 leading-relaxed">plans for hospitalisation, maternity, parents, pre-existing conditions and outpatient care.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="p-4 sm:p-5 rounded-xl bg-white/[0.06] border border-white/12 backdrop-blur-sm flex items-start gap-4 hover:bg-white/[0.09] transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-display font-bold text-white tracking-tight">Employer HR dashboard</h3>
+                        <p class="text-caption sm:text-body-sm text-white/75 mt-1 leading-relaxed">manage members, changes and renewals in one place.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="p-4 sm:p-5 rounded-xl bg-white/[0.06] border border-white/12 backdrop-blur-sm flex items-start gap-4 hover:bg-white/[0.09] transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-display font-bold text-white tracking-tight">Automated roster upload and digital health cards</h3>
+                        <p class="text-caption sm:text-body-sm text-white/75 mt-1 leading-relaxed">paperless onboarding, with instant e-cards for your team and their families.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="p-4 sm:p-5 rounded-xl bg-white/[0.06] border border-white/12 backdrop-blur-sm flex items-start gap-4 hover:bg-white/[0.09] transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-display font-bold text-white tracking-tight">Cashless hospital network</h3>
+                        <p class="text-caption sm:text-body-sm text-white/75 mt-1 leading-relaxed">care without the upfront payment.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="p-4 sm:p-5 rounded-xl bg-white/[0.06] border border-white/12 backdrop-blur-sm flex items-start gap-4 hover:bg-white/[0.09] transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-display font-bold text-white tracking-tight">Direct care specialist</h3>
+                        <p class="text-caption sm:text-body-sm text-white/75 mt-1 leading-relaxed">a point of contact when employees need help.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="p-4 sm:p-5 rounded-xl bg-white/[0.06] border border-white/12 backdrop-blur-sm flex items-start gap-4 hover:bg-white/[0.09] transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-[var(--color-champagne)]/15 text-[var(--color-champagne)] flex items-center justify-center flex-shrink-0 mt-0.5" aria-hidden="true">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-display font-bold text-white tracking-tight">Claims support</h3>
+                        <p class="text-caption sm:text-body-sm text-white/75 mt-1 leading-relaxed">guidance from admission to reimbursement.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Section CTA -->
+        <div class="text-center" data-reveal="up">
+            <a href="../get-quote" class="btn-primary !rounded-full !px-8 !py-3.5 font-display font-bold text-body text-white shadow-soft-lg hover:shadow-xl active:scale-[0.98] transition-all inline-flex items-center gap-2">
+                <span>Get a quote</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 11: TESTIMONIALS
+     Reusing the exact homepage testimonial block structure & data,
+     harmonised with footer blue palette through .page-group-health wrapper.
+     ========================================================================= -->
+<section id="testimonials" class="conversion-section testimonials-dark-bg py-20 sm:py-24 lg:py-28 relative overflow-hidden" aria-labelledby="testimonials-heading">
+    <!-- Soft Ambient Glows -->
+    <div class="edge-ambient-glow edge-ambient-glow--left-top edge-ambient-glow--pink" aria-hidden="true"></div>
+    <div class="edge-ambient-glow edge-ambient-glow--right-bottom edge-ambient-glow--lavender" aria-hidden="true"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.08] border border-white/15 text-white/90 text-[11px] sm:text-caption font-display font-bold uppercase tracking-wider mb-4 shadow-sm backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-champagne)]"></span>
+                <span>Client Perspectives</span>
+            </div>
+            <h2 id="testimonials-heading" class="text-[28px] sm:text-[36px] lg:text-[44px] font-serif font-normal text-white tracking-[-0.025em] leading-[1.18] mb-4">
+                Trusted by People leaders <span class="italic text-[var(--color-champagne)] font-serif">and operations teams.</span>
+            </h2>
+            <p class="text-body sm:text-body-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
+                How HR teams and employees experience modern healthcare benefits with Moxman.
+            </p>
+        </div>
+
+        <!-- Avatar Ribbon Row -->
+        <div class="flex items-center justify-center gap-3 sm:gap-4 md:gap-5 mb-10 sm:mb-12" id="testimonialAvatarRibbon" role="tablist" aria-label="Customer Avatars">
+                            <button type="button" 
+                        class="testimonial-avatar-btn is-active rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-[#121736]" 
+                        data-slide-index="0"
+                        role="tab"
+                        aria-selected="true"
+                        aria-label="View testimonial from A., People Operations Lead">
+                    <img src="../assets/images/testimonials/avatar-1.webp" 
+                         alt="A." 
+                         width="56"
+                         height="56"
+                         class="w-full h-full object-cover rounded-full">
+                </button>
+                            <button type="button" 
+                        class="testimonial-avatar-btn  rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-[#121736]" 
+                        data-slide-index="1"
+                        role="tab"
+                        aria-selected="false"
+                        aria-label="View testimonial from R., VP Human Resources">
+                    <img src="../assets/images/testimonials/avatar-2.webp" 
+                         alt="R." 
+                         width="56"
+                         height="56"
+                         class="w-full h-full object-cover rounded-full">
+                </button>
+                            <button type="button" 
+                        class="testimonial-avatar-btn  rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-[#121736]" 
+                        data-slide-index="2"
+                        role="tab"
+                        aria-selected="false"
+                        aria-label="View testimonial from P., Talent &amp; Culture Lead">
+                    <img src="../assets/images/testimonials/avatar-3.webp" 
+                         alt="P." 
+                         width="56"
+                         height="56"
+                         class="w-full h-full object-cover rounded-full">
+                </button>
+                            <button type="button" 
+                        class="testimonial-avatar-btn  rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-[#121736]" 
+                        data-slide-index="3"
+                        role="tab"
+                        aria-selected="false"
+                        aria-label="View testimonial from S., Operations Director">
+                    <img src="../assets/images/testimonials/avatar-4.webp" 
+                         alt="S." 
+                         width="56"
+                         height="56"
+                         class="w-full h-full object-cover rounded-full">
+                </button>
+                            <button type="button" 
+                        class="testimonial-avatar-btn  rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-[#121736]" 
+                        data-slide-index="4"
+                        role="tab"
+                        aria-selected="false"
+                        aria-label="View testimonial from V., Founder &amp; Managing Director">
+                    <img src="../assets/images/testimonials/avatar-5.webp" 
+                         alt="V." 
+                         width="56"
+                         height="56"
+                         class="w-full h-full object-cover rounded-full">
+                </button>
+                    </div>
+
+        <!-- Carousel Stage -->
+        <div id="testimonialSlider" class="testimonials-carousel-viewport" tabindex="0" aria-roledescription="carousel" aria-label="Client Testimonials">
+                            <div class="testimonial-card-slide is-active" 
+                     data-slide-index="0" 
+                     role="group" 
+                     aria-roledescription="slide" 
+                     aria-label="1 of 5"
+                     aria-hidden="false">
+                    
+                    <div class="testimonial-card-box p-6 sm:p-8 lg:p-9 bg-white/[0.06] border border-white/12 backdrop-blur-md rounded-2xl">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                            
+                            <!-- Left Sub-panel: Coverage Focus & Tags -->
+                            <div class="md:col-span-4 flex flex-col justify-between border-b md:border-b-0 md:border-r border-white/10 pb-5 md:pb-0 md:pr-6">
+                                <div>
+                                    <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm font-display font-medium tracking-wide">
+                                        <svg class="w-4 h-4 text-[var(--color-champagne)] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2l1.3 5.4 5.3-1.8-2.5 5 5.5 0.8-4.7 3.1 3.8 4.1-5.5-1-1.4 5.4-1.4-5.4-5.5 1 3.8-4.1-4.7-3.1 5.5-0.8-2.5-5 5.3 1.8z"/>
+                                        </svg>
+                                        <span>Coverage Focus</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap gap-2 mt-4 md:mt-auto pt-2">
+                                                                                                                        <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Group Health                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Roster Sync                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Digital Cards                                            </span>
+                                                                                                            </div>
+                            </div>
+
+                            <!-- Right Sub-panel: Author, Rating & Quote -->
+                            <div class="md:col-span-8 flex flex-col justify-between md:pl-2">
+                                <div>
+                                    <!-- Author Header -->
+                                    <div class="flex items-center gap-3.5 mb-4">
+                                        <img src="../assets/images/testimonials/avatar-1.webp" 
+                                             alt="A." 
+                                             width="48"
+                                             height="48"
+                                             class="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border border-white/20 shadow-md flex-shrink-0">
+                                        <div class="min-w-0">
+                                            <div class="font-display font-bold text-white text-base sm:text-lg tracking-tight truncate">
+                                                A. <span class="font-normal text-white/60 text-sm">• People Operations Lead</span>
+                                            </div>
+                                            <div class="text-caption text-white/50 truncate">
+                                                Technology Services Firm, Bengaluru                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5-Star Rating -->
+                                    <div class="flex items-center gap-1.5 mb-3" aria-label="Rated 5 out of 5 stars">
+                                        <div class="flex text-amber-400 text-sm tracking-wider" aria-hidden="true">
+                                            ★★★★★
+                                        </div>
+                                        <span class="text-xs font-bold text-white/80 ml-1">5.0</span>
+                                    </div>
+
+                                    <!-- Quote Text -->
+                                    <blockquote class="text-[15px] sm:text-[17px] text-white/90 leading-relaxed font-normal">
+                                        &ldquo;Moving our team to Moxman made group health insurance straightforward. The automated roster upload and instant digital health cards took the administrative burden off our people operations team from day one.&rdquo;
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="testimonial-card-slide is-next" 
+                     data-slide-index="1" 
+                     role="group" 
+                     aria-roledescription="slide" 
+                     aria-label="2 of 5"
+                     aria-hidden="true">
+                    
+                    <div class="testimonial-card-box p-6 sm:p-8 lg:p-9 bg-white/[0.06] border border-white/12 backdrop-blur-md rounded-2xl">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                            
+                            <!-- Left Sub-panel: Coverage Focus & Tags -->
+                            <div class="md:col-span-4 flex flex-col justify-between border-b md:border-b-0 md:border-r border-white/10 pb-5 md:pb-0 md:pr-6">
+                                <div>
+                                    <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm font-display font-medium tracking-wide">
+                                        <svg class="w-4 h-4 text-[var(--color-champagne)] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2l1.3 5.4 5.3-1.8-2.5 5 5.5 0.8-4.7 3.1 3.8 4.1-5.5-1-1.4 5.4-1.4-5.4-5.5 1 3.8-4.1-4.7-3.1 5.5-0.8-2.5-5 5.3 1.8z"/>
+                                        </svg>
+                                        <span>Coverage Focus</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap gap-2 mt-4 md:mt-auto pt-2">
+                                                                                                                        <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Emergency Desk                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Pre-Auth                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Family Care                                            </span>
+                                                                                                            </div>
+                            </div>
+
+                            <!-- Right Sub-panel: Author, Rating & Quote -->
+                            <div class="md:col-span-8 flex flex-col justify-between md:pl-2">
+                                <div>
+                                    <!-- Author Header -->
+                                    <div class="flex items-center gap-3.5 mb-4">
+                                        <img src="../assets/images/testimonials/avatar-2.webp" 
+                                             alt="R." 
+                                             width="48"
+                                             height="48"
+                                             class="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border border-white/20 shadow-md flex-shrink-0">
+                                        <div class="min-w-0">
+                                            <div class="font-display font-bold text-white text-base sm:text-lg tracking-tight truncate">
+                                                R. <span class="font-normal text-white/60 text-sm">• VP Human Resources</span>
+                                            </div>
+                                            <div class="text-caption text-white/50 truncate">
+                                                Software Enterprise, Mumbai                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5-Star Rating -->
+                                    <div class="flex items-center gap-1.5 mb-3" aria-label="Rated 5 out of 5 stars">
+                                        <div class="flex text-amber-400 text-sm tracking-wider" aria-hidden="true">
+                                            ★★★★★
+                                        </div>
+                                        <span class="text-xs font-bold text-white/80 ml-1">5.0</span>
+                                    </div>
+
+                                    <!-- Quote Text -->
+                                    <blockquote class="text-[15px] sm:text-[17px] text-white/90 leading-relaxed font-normal">
+                                        &ldquo;Having a dedicated claims desk made all the difference when a team member required emergency hospital admission. Pre-authorisation was coordinated directly without the family needing to navigate paperwork alone.&rdquo;
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="testimonial-card-slide " 
+                     data-slide-index="2" 
+                     role="group" 
+                     aria-roledescription="slide" 
+                     aria-label="3 of 5"
+                     aria-hidden="true">
+                    
+                    <div class="testimonial-card-box p-6 sm:p-8 lg:p-9 bg-white/[0.06] border border-white/12 backdrop-blur-md rounded-2xl">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                            
+                            <!-- Left Sub-panel: Coverage Focus & Tags -->
+                            <div class="md:col-span-4 flex flex-col justify-between border-b md:border-b-0 md:border-r border-white/10 pb-5 md:pb-0 md:pr-6">
+                                <div>
+                                    <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm font-display font-medium tracking-wide">
+                                        <svg class="w-4 h-4 text-[var(--color-champagne)] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2l1.3 5.4 5.3-1.8-2.5 5 5.5 0.8-4.7 3.1 3.8 4.1-5.5-1-1.4 5.4-1.4-5.4-5.5 1 3.8-4.1-4.7-3.1 5.5-0.8-2.5-5 5.3 1.8z"/>
+                                        </svg>
+                                        <span>Coverage Focus</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap gap-2 mt-4 md:mt-auto pt-2">
+                                                                                                                        <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                HR Dashboard                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Live Ledger                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Self-Serve                                            </span>
+                                                                                                            </div>
+                            </div>
+
+                            <!-- Right Sub-panel: Author, Rating & Quote -->
+                            <div class="md:col-span-8 flex flex-col justify-between md:pl-2">
+                                <div>
+                                    <!-- Author Header -->
+                                    <div class="flex items-center gap-3.5 mb-4">
+                                        <img src="../assets/images/testimonials/avatar-3.webp" 
+                                             alt="P." 
+                                             width="48"
+                                             height="48"
+                                             class="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border border-white/20 shadow-md flex-shrink-0">
+                                        <div class="min-w-0">
+                                            <div class="font-display font-bold text-white text-base sm:text-lg tracking-tight truncate">
+                                                P. <span class="font-normal text-white/60 text-sm">• Talent &amp; Culture Lead</span>
+                                            </div>
+                                            <div class="text-caption text-white/50 truncate">
+                                                Digital Commerce Platform, Gurugram                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5-Star Rating -->
+                                    <div class="flex items-center gap-1.5 mb-3" aria-label="Rated 5 out of 5 stars">
+                                        <div class="flex text-amber-400 text-sm tracking-wider" aria-hidden="true">
+                                            ★★★★★
+                                        </div>
+                                        <span class="text-xs font-bold text-white/80 ml-1">5.0</span>
+                                    </div>
+
+                                    <!-- Quote Text -->
+                                    <blockquote class="text-[15px] sm:text-[17px] text-white/90 leading-relaxed font-normal">
+                                        &ldquo;The clarity of the employer dashboard is what sold us. Being able to track policy documents, real-time claim status, and employee additions in one unified interface saves our HR team several hours every month.&rdquo;
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="testimonial-card-slide " 
+                     data-slide-index="3" 
+                     role="group" 
+                     aria-roledescription="slide" 
+                     aria-label="4 of 5"
+                     aria-hidden="true">
+                    
+                    <div class="testimonial-card-box p-6 sm:p-8 lg:p-9 bg-white/[0.06] border border-white/12 backdrop-blur-md rounded-2xl">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                            
+                            <!-- Left Sub-panel: Coverage Focus & Tags -->
+                            <div class="md:col-span-4 flex flex-col justify-between border-b md:border-b-0 md:border-r border-white/10 pb-5 md:pb-0 md:pr-6">
+                                <div>
+                                    <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm font-display font-medium tracking-wide">
+                                        <svg class="w-4 h-4 text-[var(--color-champagne)] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2l1.3 5.4 5.3-1.8-2.5 5 5.5 0.8-4.7 3.1 3.8 4.1-5.5-1-1.4 5.4-1.4-5.4-5.5 1 3.8-4.1-4.7-3.1 5.5-0.8-2.5-5 5.3 1.8z"/>
+                                        </svg>
+                                        <span>Coverage Focus</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap gap-2 mt-4 md:mt-auto pt-2">
+                                                                                                                        <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Cashless Network                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Dependants                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Hospital Finder                                            </span>
+                                                                                                            </div>
+                            </div>
+
+                            <!-- Right Sub-panel: Author, Rating & Quote -->
+                            <div class="md:col-span-8 flex flex-col justify-between md:pl-2">
+                                <div>
+                                    <!-- Author Header -->
+                                    <div class="flex items-center gap-3.5 mb-4">
+                                        <img src="../assets/images/testimonials/avatar-4.webp" 
+                                             alt="S." 
+                                             width="48"
+                                             height="48"
+                                             class="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border border-white/20 shadow-md flex-shrink-0">
+                                        <div class="min-w-0">
+                                            <div class="font-display font-bold text-white text-base sm:text-lg tracking-tight truncate">
+                                                S. <span class="font-normal text-white/60 text-sm">• Operations Director</span>
+                                            </div>
+                                            <div class="text-caption text-white/50 truncate">
+                                                Logistics &amp; Supply Chain Group, Pune                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5-Star Rating -->
+                                    <div class="flex items-center gap-1.5 mb-3" aria-label="Rated 5 out of 5 stars">
+                                        <div class="flex text-amber-400 text-sm tracking-wider" aria-hidden="true">
+                                            ★★★★★
+                                        </div>
+                                        <span class="text-xs font-bold text-white/80 ml-1">5.0</span>
+                                    </div>
+
+                                    <!-- Quote Text -->
+                                    <blockquote class="text-[15px] sm:text-[17px] text-white/90 leading-relaxed font-normal">
+                                        &ldquo;Our employees genuinely appreciate being able to locate cashless hospitals and view their family coverage details right from their employee dashboard. It transformed our health policy from a hidden document to an active benefit.&rdquo;
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                            <div class="testimonial-card-slide is-prev" 
+                     data-slide-index="4" 
+                     role="group" 
+                     aria-roledescription="slide" 
+                     aria-label="5 of 5"
+                     aria-hidden="true">
+                    
+                    <div class="testimonial-card-box p-6 sm:p-8 lg:p-9 bg-white/[0.06] border border-white/12 backdrop-blur-md rounded-2xl">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                            
+                            <!-- Left Sub-panel: Coverage Focus & Tags -->
+                            <div class="md:col-span-4 flex flex-col justify-between border-b md:border-b-0 md:border-r border-white/10 pb-5 md:pb-0 md:pr-6">
+                                <div>
+                                    <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm font-display font-medium tracking-wide">
+                                        <svg class="w-4 h-4 text-[var(--color-champagne)] flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2l1.3 5.4 5.3-1.8-2.5 5 5.5 0.8-4.7 3.1 3.8 4.1-5.5-1-1.4 5.4-1.4-5.4-5.5 1 3.8-4.1-4.7-3.1 5.5-0.8-2.5-5 5.3 1.8z"/>
+                                        </svg>
+                                        <span>Coverage Focus</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap gap-2 mt-4 md:mt-auto pt-2">
+                                                                                                                        <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Consolidated Suite                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Accident Cover                                            </span>
+                                                                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/[0.08] text-white/80 border border-white/10 backdrop-blur-sm">
+                                                Predictable Plans                                            </span>
+                                                                                                            </div>
+                            </div>
+
+                            <!-- Right Sub-panel: Author, Rating & Quote -->
+                            <div class="md:col-span-8 flex flex-col justify-between md:pl-2">
+                                <div>
+                                    <!-- Author Header -->
+                                    <div class="flex items-center gap-3.5 mb-4">
+                                        <img src="../assets/images/testimonials/avatar-5.webp" 
+                                             alt="V." 
+                                             width="48"
+                                             height="48"
+                                             class="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border border-white/20 shadow-md flex-shrink-0">
+                                        <div class="min-w-0">
+                                            <div class="font-display font-bold text-white text-base sm:text-lg tracking-tight truncate">
+                                                V. <span class="font-normal text-white/60 text-sm">• Founder &amp; Managing Director</span>
+                                            </div>
+                                            <div class="text-caption text-white/50 truncate">
+                                                Cloud Solutions Provider, Hyderabad                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5-Star Rating -->
+                                    <div class="flex items-center gap-1.5 mb-3" aria-label="Rated 5 out of 5 stars">
+                                        <div class="flex text-amber-400 text-sm tracking-wider" aria-hidden="true">
+                                            ★★★★★
+                                        </div>
+                                        <span class="text-xs font-bold text-white/80 ml-1">5.0</span>
+                                    </div>
+
+                                    <!-- Quote Text -->
+                                    <blockquote class="text-[15px] sm:text-[17px] text-white/90 leading-relaxed font-normal">
+                                        &ldquo;Consolidating our health, personal accident, and wellness programs into one predictable platform helped us deliver better healthcare protection to our team while simplifying policy administration and renewals.&rdquo;
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                    </div>
+
+        <!-- Navigation Controls (Arrows) -->
+        <div class="mt-8 sm:mt-10 flex items-center justify-center gap-3">
+            <button type="button" 
+                    id="testimonialPrevBtn" 
+                    class="w-11 h-11 rounded-xl bg-white/[0.07] border border-white/15 text-white/80 hover:text-white hover:bg-white/[0.14] hover:border-white/25 flex items-center justify-center transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121736] active:scale-95" 
+                    aria-label="Previous testimonial">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button type="button" 
+                    id="testimonialNextBtn" 
+                    class="w-11 h-11 rounded-xl bg-white/[0.07] border border-white/15 text-white/80 hover:text-white hover:bg-white/[0.14] hover:border-white/25 flex items-center justify-center transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-champagne)] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121736] active:scale-95" 
+                    aria-label="Next testimonial">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 12: FREQUENTLY ASKED QUESTIONS
+     Soft light surface (#f6f8fd) with accessible native accordion (<details>)
+     and exact FAQPage JSON-LD schema matching visible text.
+     ========================================================================= -->
+<section id="faq-ghi" class="py-16 sm:py-20 lg:py-24 bg-[var(--color-ghi-surface-light)] border-t border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-main)]" aria-labelledby="heading-faq">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16" data-reveal="up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--color-ghi-border-light)] text-[var(--color-ghi-text-muted)] text-caption font-display font-semibold uppercase tracking-wider mb-4 shadow-soft-xs">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-footer-blue-base)]"></span>
+                <span>Clarity & Guidance</span>
+            </div>
+            <h2 id="heading-faq" class="text-[28px] sm:text-[34px] lg:text-[40px] font-serif font-normal text-[var(--color-ghi-text-main)] tracking-[-0.025em] leading-[1.18] mb-4">
+                Frequently asked <span class="italic font-serif text-[var(--color-ghi-gold-dark)] font-normal">questions</span>
+            </h2>
+        </div>
+
+        <!-- Accordion Cards -->
+        <div class="max-w-3xl mx-auto flex flex-col gap-3.5 sm:gap-4" id="faqAccordionGhi" data-reveal="up">
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" open>
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            What is group health insurance?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">A single policy bought by a company to cover its employees, and often their families, against medical and hospital costs.</p>
+                    </div>
+                </details>
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" >
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            Who can buy it?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">Any registered business or organisation that wants to cover its employees. Eligibility depends on the insurer.</p>
+                    </div>
+                </details>
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" >
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            How many employees do we need?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">Insurers set their own minimum group size. Talk to us and we will tell you what applies to your team.</p>
+                    </div>
+                </details>
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" >
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            Is it mandatory?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">Not generally for private employers, though many offer it. Some statutory schemes may apply depending on company size and wages, so check with your advisor.</p>
+                    </div>
+                </details>
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" >
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            What affects the premium?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">Team size, age mix, sum insured, who is covered, maternity and add-ons, and claims history.</p>
+                    </div>
+                </details>
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" >
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            How is it different from individual cover?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">One company-managed policy with typically fewer waiting periods and less paperwork, but cover is linked to employment.</p>
+                    </div>
+                </details>
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" >
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            Are parents and pre-existing conditions covered?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">Often yes, depending on the plan. Parents are usually an optional add-on, and terms vary by insurer.</p>
+                    </div>
+                </details>
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" >
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            What documents do we need?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">Basic company details and an employee list. We will confirm the exact requirements when you request a quote.</p>
+                    </div>
+                </details>
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" >
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            How do claims and cashless treatment work?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">Employees show their health card at a network hospital, and the claim is settled directly. Reimbursement claims are supported as well.</p>
+                    </div>
+                </details>
+                            <details class="faq-card group bg-white border border-[var(--color-ghi-border-light)] rounded-2xl shadow-soft-xs overflow-hidden transition-all duration-200" name="faq-ghi-group" >
+                    <summary class="faq-card-header p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-footer-blue-base)] select-none">
+                        <span class="faq-card-question text-base sm:text-lg font-display font-bold text-[var(--color-ghi-text-main)] leading-snug">
+                            How does renewal work?                        </span>
+                        <span class="faq-card-chevron w-7 h-7 rounded-full bg-[var(--color-ghi-surface-alt)] flex items-center justify-center text-[var(--color-footer-blue-base)] flex-shrink-0 transition-transform duration-200 group-open:rotate-180" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card-body px-5 sm:px-6 pb-5 sm:pb-6 text-body-sm sm:text-body text-[var(--color-ghi-text-muted)] leading-relaxed border-t border-[var(--color-ghi-border-light)] pt-4">
+                        <p class="m-0">The policy renews each year. We review claims, team changes and needs with you, and adjust the plan.</p>
+                    </div>
+                </details>
+                    </div>
+
+    </div>
+</section>
+
+<!-- =========================================================================
+     SECTION 13: CLOSING CALL-TO-ACTION (#cta-call)
+     Full-width footer blue band (#1d2659) directly above site footer.
+     Flows seamlessly into site footer with zero seam.
+     ========================================================================= -->
+<section id="cta-call" class="conversion-section cta-call-section pt-14 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24 relative select-none sm:select-auto bg-[var(--color-footer-blue-base)] text-white" aria-labelledby="cta-call-heading">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8 lg:gap-12" data-reveal="up">
+        <div class="max-w-2xl text-left">
+            <h2 id="cta-call-heading" class="text-[22px] sm:text-[26px] lg:text-[32px] font-serif font-normal text-white tracking-[-0.025em] leading-[1.25] mb-2.5">
+                Ready to elevate healthcare benefits <span class="italic font-serif text-[var(--color-champagne)] font-normal">for your team?</span>
+            </h2>
+            <p class="text-body-sm sm:text-body text-white/80 leading-relaxed font-normal m-0">
+                Speak with our employee benefits specialists to tailor a comprehensive plan for your organisation.
+            </p>
+        </div>
+        <div class="flex-shrink-0">
+            <a href="../get-quote" class="btn-primary !rounded-full !px-7 sm:!px-8 !py-3.5 sm:!py-4 font-display font-bold text-caption sm:text-body-sm lg:text-body text-white shadow-soft-lg hover:shadow-xl active:scale-[0.98] transition-all inline-flex items-center gap-2 whitespace-nowrap">
+                <span>Schedule a Call</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQPage JSON-LD Structured Data Matching Visible FAQs Exactly -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is group health insurance?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A single policy bought by a company to cover its employees, and often their families, against medical and hospital costs."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Who can buy it?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Any registered business or organisation that wants to cover its employees. Eligibility depends on the insurer."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How many employees do we need?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Insurers set their own minimum group size. Talk to us and we will tell you what applies to your team."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is it mandatory?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not generally for private employers, though many offer it. Some statutory schemes may apply depending on company size and wages, so check with your advisor."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What affects the premium?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Team size, age mix, sum insured, who is covered, maternity and add-ons, and claims history."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How is it different from individual cover?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "One company-managed policy with typically fewer waiting periods and less paperwork, but cover is linked to employment."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Are parents and pre-existing conditions covered?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Often yes, depending on the plan. Parents are usually an optional add-on, and terms vary by insurer."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What documents do we need?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Basic company details and an employee list. We will confirm the exact requirements when you request a quote."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do claims and cashless treatment work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Employees show their health card at a network hospital, and the claim is settled directly. Reimbursement claims are supported as well."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does renewal work?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The policy renews each year. We review claims, team changes and needs with you, and adjust the plan."
+            }
+        }
+    ]
+}</script>
+
+<!-- DEBUG-VIEW ENDED 2 APPPATH/Views/partials/group-health-sections.php -->
+
+    </main>
+
+    <!-- Shared Footer Partial -->
+    <!-- DEBUG-VIEW START 4 APPPATH/Views/partials/footer.php -->
+<!-- Site Footer -->
+<footer class="site-footer w-full mt-auto" aria-label="Site Footer">
+
+    <!-- =========================================================================
+         ATMOSPHERIC TEAM BAND & MISSION STATEMENT OVERLAY
+         Deep dark Moxman purple backdrop, clearly visible glowing brand wordmark,
+         transparent team portrait cutout of Indian professionals, reduced height
+         ========================================================================= -->
+    <section class="footer-team-band relative w-full" aria-label="Our Mission and Team">
+        <!-- Layer 1: Dark Purple Ambient Backdrop & Section Vignette -->
+        <div class="footer-team-backdrop" aria-hidden="true"></div>
+        <div class="footer-team-vignette" aria-hidden="true"></div>
+
+        <!-- Layer 2: Pure CSS Ambient Glow behind brand wordmark (instant first-paint, zero clipping) -->
+        <div class="footer-brand-ambient-glow" aria-hidden="true"></div>
+
+        <!-- Layer 3: Brand Wordmark (Crisp logo positioned over ambient glow) -->
+        <div class="footer-brand-logo" aria-hidden="true">
+            <picture>
+                <source srcset="../assets/images/brand/moxman-logo.webp" type="image/webp">
+                <img src="../assets/images/brand/moxman-logo.png" 
+                     alt="" 
+                     width="1854" 
+                     height="394" 
+                     class="footer-brand-logo-img"
+                     loading="lazy" 
+                     decoding="async">
+            </picture>
+        </div>
+
+        <!-- Layer 4: Transparent Team Cutout (Front layer over logo, smooth 300ms fade-in) -->
+        <div class="footer-team-cutout-wrap">
+            <picture class="w-full block">
+                <source srcset="../assets/images/footer/moxman-team-cutout-640.webp 640w, ../assets/images/footer/moxman-team-cutout-960.webp 960w, ../assets/images/footer/moxman-team-cutout-1376.webp 1376w" 
+                        sizes="(min-width: 1024px) 1344px, 100vw" 
+                        type="image/webp">
+                <source srcset="../assets/images/footer/moxman-team-cutout-640.png 640w, ../assets/images/footer/moxman-team-cutout-960.png 960w, ../assets/images/footer/moxman-team-cutout-1376.png 1376w" 
+                        sizes="(min-width: 1024px) 1344px, 100vw" 
+                        type="image/png">
+                <img src="../assets/images/footer/moxman-team-cutout-1376.png" 
+                     alt="Moxman Fintech professional team portrait" 
+                     width="1376" 
+                     height="696" 
+                     loading="lazy" 
+                     decoding="async" 
+                     class="footer-team-cutout-img"
+                     onload="this.classList.add('is-loaded')">
+            </picture>
+
+            <!-- Soft bottom scrim to blend sofa base seamlessly into footer body -->
+            <div class="footer-team-bottom-scrim" aria-hidden="true"></div>
+        </div>
+
+        <!-- Layer 4: Overlaid Mission Statement across lower portion of photo -->
+        <div class="footer-mission-wrap max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full mb-3 sm:mb-3.5 border footer-mission-eyebrow">
+                <span class="w-2 h-2 rounded-full animate-pulse" style="background-color: var(--color-footer-pink);"></span>
+                <span class="text-[11px] sm:text-caption font-display font-bold uppercase tracking-[0.16em]">
+                    The Moxman Mission
+                </span>
+            </div>
+
+            <h2 class="footer-mission-heading text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[36px] font-serif font-extrabold text-white tracking-[-0.03em] leading-[1.25] max-w-none mx-auto">
+                Our mission is to help teams and families get care they can count on<br class="hidden md:inline"> <span class="italic text-[#70ee91] font-serif">and benefits they can understand.</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Glowing Pink-Purple Divider: Dividing moment with soft beam and ambient bloom -->
+    <div class="footer-glow-divider-wrap" aria-hidden="true">
+        <div class="footer-glow-divider-beam"></div>
+        <div class="footer-glow-divider-bloom"></div>
+    </div>
+
+    <!-- =========================================================================
+         FOOTER BODY & NAVIGATION COLUMNS
+         Organised grid with bold white headings, lighter readable links,
+         smooth pink hover states, coverage disclosure, and legal bottom bar
+         ========================================================================= -->
+    <div class="footer-body relative w-full pt-2 pb-12 sm:pb-16">
+        <div class="footer-body-ambient" aria-hidden="true"></div>
+
+
+        <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Main Footer Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12 pb-14 sm:pb-16">
+                
+                <!-- Brand Column -->
+                <div class="sm:col-span-2 lg:col-span-2 flex flex-col gap-5">
+                    <a href="../" class="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-footer-pink focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg rounded-sm" aria-label="Moxman Fintech">
+                        <picture>
+                            <source srcset="../assets/images/brand/logo.webp" type="image/webp">
+                            <img 
+                                src="../assets/images/brand/logo.png" 
+                                alt="Moxman Fintech - Group Health Insurance and Employee Benefits"
+                                width="218" 
+                                height="46" 
+                                class="h-9 w-auto brightness-0 invert opacity-95 hover:opacity-100 transition-opacity"
+                                loading="lazy"
+                                decoding="async"
+                            >
+                        </picture>
+                    </a>
+                    
+                    <p class="text-body-sm text-footer-text max-w-sm leading-relaxed">
+                        Moxman Fintech helps Indian employers bring group insurance, employee benefits, claims support, and wellness into one experience.
+                    </p>
+
+                    <!-- Product positioning -->
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-2 rounded-lg bg-white/[0.04] border border-white/[0.08] text-caption text-footer-text w-fit">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></span>
+                        <span>Group benefits for Indian teams</span>
+                    </div>
+                </div>
+
+                <!-- Col 1: Insurance Products -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-h6 font-display font-bold text-white tracking-wide">Explore</h3>
+                    <ul class="flex flex-col gap-2.5 text-body-sm">
+                        <li><a href="../#approach" class="footer-link">The Moxman approach</a></li>
+                        <li><a href="../#groupSuite" class="footer-link">For people</a></li>
+                        <li><a href="../#platform" class="footer-link">How it works</a></li>
+                        <li><a href="../#solutions" class="footer-link">Who it is for</a></li>
+                        <li><a href="../get-quote" class="footer-link">Get a quote</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Claims & Assistance -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-h6 font-display font-bold text-white tracking-wide">Questions</h3>
+                    <ul class="flex flex-col gap-2.5 text-body-sm">
+                        <li><a href="../#claims" class="footer-link">When the unexpected happens</a></li>
+                        <li><a href="../#faq" class="footer-link">Frequently asked questions</a></li>
+                        <li><a href="../#about" class="footer-link">About Moxman</a></li>
+                        <li><a href="../#platform" class="footer-link">Share your context</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Company & Trust -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-h6 font-display font-bold text-white tracking-wide">Important details</h3>
+                    <ul class="flex flex-col gap-2.5 text-body-sm">
+                        <li><a href="../#claims" class="footer-link">Policy details</a></li>
+                        <li><a href="../#faq" class="footer-link">What is confirmed</a></li>
+                        <li><a href="../#solutions" class="footer-link">Contact destination</a></li>
+                        <li><a href="../#claims" class="footer-link">Policy terms and exclusions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Bar: Copyright & Security -->
+            <div class="pt-6 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-caption text-footer-muted">
+                <p>&copy; 2026 Moxman Fintech Pvt. Ltd. All rights reserved.</p>
+                <div class="flex flex-wrap items-center justify-center sm:justify-end gap-x-6 gap-y-2">
+                    <span>Privacy-first product design</span>
+                    <span>Secure digital workflows</span>
+                    <span>Made for Indian teams</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- DEBUG-VIEW ENDED 4 APPPATH/Views/partials/footer.php -->
+
+    <!-- Deferred Bundled JavaScript (GSAP + ScrollTrigger + Lenis) -->
+    <script src="../assets/js/app.min.js" defer></script>
+</body>
+</html>
+
+<!-- DEBUG-VIEW ENDED 5 APPPATH/Views/layouts/main.php -->
+
+<!-- DEBUG-VIEW ENDED 6 APPPATH/Views/group-health-insurance.php -->

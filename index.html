@@ -290,6 +290,7 @@
      paragraphs and illustrated line-art scenes. Large visual bleeding right.
      ========================================================================= -->
 <section id="heroSection" class="relative bg-hero-cream text-neutral-800 overflow-x-clip overflow-y-visible">
+    <img class="hero-dotted-picture" src="./assets/images/heroassets/hero-dotted-pattern.png" alt="" width="787" height="241" aria-hidden="true" loading="eager" decoding="async">
     
     <!-- Pinned Viewport Container for Scroll Story -->
     <div id="heroPinContainer" class="relative z-10 w-full min-h-[100svh] flex flex-col justify-between pt-[104px] sm:pt-[124px] lg:pt-[144px] xl:pt-[150px] bg-hero-cream overflow-hidden">
@@ -485,27 +486,20 @@
          SCENE 1 (Slide 1): Corporate Healthcare Family Graphic (Layer 4: In front of curve)
          =================================================================== -->
     <div id="heroScene1" class="hero-scene-group w-full flex items-end justify-center lg:justify-end opacity-100 transition-opacity duration-300">
-        <div class="claims-artwork-stage hero-claims-artwork relative select-none w-full" aria-label="Moxman cashless care and dedicated claims support team">
+        <div class="claims-artwork-stage hero-claims-artwork hero-healthcare-stage relative select-none w-full" aria-label="Moxman cashless care and dedicated claims support team">
 
-            <!-- Hero Graphic: Healthcare Doctor and Smiling Indian Family with Designed Background & Shield -->
+            <!-- Approved healthcare team and hospital artwork -->
             <div class="claims-artwork-people hero-claims-people relative flex justify-center w-full">
                 <picture class="block w-full">
-                    <source 
-                        srcset="./assets/images/about/SmilingFamilyHealthcareTeam.webp"
-                        type="image/webp"
-                    >
-                    <img 
-                        src="./assets/images/about/SmilingFamilyHealthcareTeam.png" 
-                        alt="Compassionate healthcare doctor and smiling young Indian family with modern benefits protection" 
-                        width="1383" 
-                        height="1137" 
-                        class="claims-artwork-img hero-claims-img w-full h-auto object-contain mx-auto"
-                        loading="eager" 
-                        fetchpriority="high"
-                        decoding="async" 
-                    >
+                    <source srcset="./assets/images/heroassets/SmilingHealthcareTeamwithHospitalOverlay.webp" type="image/webp">
+                    <img src="./assets/images/heroassets/SmilingHealthcareTeamwithHospitalOverlay.png" alt="An Indian doctor, a woman and a man standing in front of a modern hospital and office buildings" width="1162" height="741" class="claims-artwork-img hero-claims-img w-full h-auto object-contain mx-auto" loading="eager" fetchpriority="high" decoding="async">
                 </picture>
             </div>
+
+            <img class="hero-floating-object hero-object-diamond" src="./assets/images/heroassets/hero-diamond.webp" alt="" width="196" height="191" aria-hidden="true" loading="eager" decoding="async">
+            <img class="hero-floating-object hero-object-shield" src="./assets/images/heroassets/hero-medical-shield.webp" alt="" width="210" height="240" aria-hidden="true" loading="eager" decoding="async">
+            <img class="hero-floating-object hero-object-cube" src="./assets/images/heroassets/hero-cube.webp" alt="" width="180" height="191" aria-hidden="true" loading="eager" decoding="async">
+            <img class="hero-floating-object hero-object-sphere" src="./assets/images/heroassets/hero-sphere.png" alt="" width="182" height="179" aria-hidden="true" loading="eager" decoding="async">
 
             <!-- Badge 2: Cashless care / Direct Admission (Lower-Mid-Left) -->
             <div class="claims-badge claims-badge-2 absolute left-0 sm:left-1 bottom-[22%] sm:bottom-[15%] lg:bottom-[23%] hidden lg:block" role="presentation">
@@ -521,24 +515,6 @@
                         <span class="block text-[8px] sm:text-[9.5px] font-display font-bold uppercase tracking-wider text-logo-purple">Cashless care</span>
                         <strong class="block text-[10.5px] sm:text-[13.5px] font-display font-extrabold text-neutral-900 leading-tight mt-0.5">Direct Admission</strong>
                         <span class="block text-[9px] sm:text-[11px] text-neutral-600 leading-snug mt-0.5 font-medium">Smooth admission without upfront deposits</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Badge 3: Dedicated claims desk (Upper-Mid-Right) -->
-            <div class="claims-badge claims-badge-3 absolute right-0 sm:right-0 top-[46%] sm:top-[34%] hidden lg:block" role="presentation">
-                <div class="claims-badge-inner flex items-start gap-2 sm:gap-3 p-2 sm:p-3.5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/80 shadow-[0_12px_30px_-6px_rgba(61,21,97,0.16),0_4px_12px_-2px_rgba(61,21,97,0.08)] max-w-[155px] min-[390px]:max-w-[175px] sm:max-w-[245px] lg:max-w-[260px]">
-                    <div class="w-6 h-6 sm:w-9 sm:h-9 rounded-xl bg-primary-50 text-primary-900 border border-primary-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg class="w-3.5 h-3.5 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M19 11a3 3 0 0 0-3 3c0 2 3 4 3 4s3-2 3-4a3 3 0 0 0-3-3z"/>
-                        </svg>
-                    </div>
-                    <div class="min-w-0">
-                        <span class="block text-[8px] sm:text-[9.5px] font-display font-bold uppercase tracking-wider text-primary-900">Dedicated claims desk</span>
-                        <strong class="block text-[10.5px] sm:text-[13.5px] font-display font-extrabold text-neutral-900 leading-tight mt-0.5">Personal Care Specialist</strong>
-                        <span class="block text-[9px] sm:text-[11px] text-neutral-600 leading-snug mt-0.5 font-medium">Empathetic specialist standing by your team</span>
                     </div>
                 </div>
             </div>
@@ -1970,29 +1946,29 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
             <!-- Left: Dedicated Claims Support Professionals with Purple Swoosh Graphic -->
-            <div class="lg:col-span-7 flex flex-col items-center lg:items-start justify-end relative w-full self-end">
+            <div class="order-2 lg:order-1 lg:col-span-7 flex flex-col items-center lg:items-start justify-end relative w-full self-end">
                 <div class="claims-arch-stage select-none" id="claimsArtworkStage" aria-label="Moxman cashless care and dedicated claims support team">
                     <div class="claims-arch-figure">
                         <picture class="block w-full">
                             <source 
-                                srcset="./assets/images/about/ProfessionalDuowithPurpleSwoosh-640.webp 640w,
-                                        ./assets/images/about/ProfessionalDuowithPurpleSwoosh-960.webp 960w,
-                                        ./assets/images/about/ProfessionalDuowithPurpleSwoosh.webp 1385w"
-                                sizes="(min-width: 1280px) 640px, (min-width: 1024px) 55vw, (min-width: 640px) 520px, 100vw" 
+                                srcset="./assets/images/about/SmilingHealthcareInsuranceProfessionals-640.webp 640w,
+                                        ./assets/images/about/SmilingHealthcareInsuranceProfessionals-960.webp 960w,
+                                        ./assets/images/about/SmilingHealthcareInsuranceProfessionals.webp 1536w"
+                                sizes="(min-width: 1280px) 620px, (min-width: 1024px) 55vw, (min-width: 640px) 500px, 100vw" 
                                 type="image/webp"
                             >
                             <source 
-                                srcset="./assets/images/about/ProfessionalDuowithPurpleSwoosh-640.png 640w,
-                                        ./assets/images/about/ProfessionalDuowithPurpleSwoosh-960.png 960w,
-                                        ./assets/images/about/ProfessionalDuowithPurpleSwoosh.png 1385w"
-                                sizes="(min-width: 1280px) 640px, (min-width: 1024px) 55vw, (min-width: 640px) 520px, 100vw" 
+                                srcset="./assets/images/about/SmilingHealthcareInsuranceProfessionals-640.png 640w,
+                                        ./assets/images/about/SmilingHealthcareInsuranceProfessionals-960.png 960w,
+                                        ./assets/images/about/SmilingHealthcareInsuranceProfessionals.png 1536w"
+                                sizes="(min-width: 1280px) 620px, (min-width: 1024px) 55vw, (min-width: 640px) 500px, 100vw" 
                                 type="image/png"
                             >
                             <img 
-                                src="./assets/images/about/ProfessionalDuowithPurpleSwoosh.png" 
-                                alt="Two dedicated corporate claims managers surrounded by a purple swoosh representing seamless cashless insurance claim assistance" 
-                                width="1385" 
-                                height="1136" 
+                                src="./assets/images/about/SmilingHealthcareInsuranceProfessionals.png" 
+                                alt="Smiling healthcare insurance professionals providing stress-free cashless claims support" 
+                                width="1536" 
+                                height="1017" 
                                 class="claims-arch-img"
                                 loading="lazy" 
                                 decoding="async" 
@@ -2003,7 +1979,7 @@
             </div>
 
             <!-- Right: Cashless & Claims-Support Points -->
-            <div class="lg:col-span-5 flex flex-col gap-5 lg:self-center pb-12 sm:pb-16 lg:pb-20" data-reveal="right">
+            <div class="order-1 lg:order-2 lg:col-span-5 flex flex-col gap-5 lg:self-center mb-6 lg:mb-0 pb-2 sm:pb-4 lg:pb-20" data-reveal="right">
                 
                 <div class="flex items-start gap-3.5">
                     <div class="w-9 h-9 rounded-xl bg-pink-100 text-logo-pink flex items-center justify-center flex-shrink-0 mt-0.5">

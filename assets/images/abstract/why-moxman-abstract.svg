@@ -1,0 +1,75 @@
+<svg viewBox="0 0 850 700" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMaxYMin meet">
+  <defs>
+    <linearGradient id="facetFadeMask" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.75" />
+      <stop offset="75%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <mask id="polyMask">
+      <rect width="850" height="700" fill="url(#facetFadeMask)" />
+    </mask>
+  </defs>
+  <g mask="url(#polyMask)">
+    <polygon points="850,0 730,0 750,95" fill="#b2cbe8" fill-opacity="0.65" stroke="#b2cbe8" stroke-width="0.75" stroke-opacity="0.52" />
+    <polygon points="850,0 750,95 850,110" fill="#c5daf0" fill-opacity="0.70" stroke="#c5daf0" stroke-width="0.75" stroke-opacity="0.56" />
+    <polygon points="730,0 590,0 620,75" fill="#cbdcf2" fill-opacity="0.60" stroke="#cbdcf2" stroke-width="0.75" stroke-opacity="0.48" />
+    <polygon points="730,0 620,75 750,95" fill="#a0bfe4" fill-opacity="0.72" stroke="#a0bfe4" stroke-width="0.75" stroke-opacity="0.58" />
+    <polygon points="590,0 460,0 490,65" fill="#d5e6f6" fill-opacity="0.52" stroke="#d5e6f6" stroke-width="0.75" stroke-opacity="0.42" />
+    <polygon points="590,0 490,65 620,75" fill="#b7d1ee" fill-opacity="0.65" stroke="#b7d1ee" stroke-width="0.75" stroke-opacity="0.52" />
+    <polygon points="460,0 330,0 370,100" fill="#e0effa" fill-opacity="0.45" stroke="#e0effa" stroke-width="0.75" stroke-opacity="0.36" />
+    <polygon points="460,0 370,100 490,65" fill="#c7def4" fill-opacity="0.58" stroke="#c7def4" stroke-width="0.75" stroke-opacity="0.46" />
+    <polygon points="330,0 210,30 260,150" fill="#e8f3fb" fill-opacity="0.40" stroke="#e8f3fb" stroke-width="0.75" stroke-opacity="0.32" />
+    <polygon points="330,0 260,150 370,100" fill="#d2e4f6" fill-opacity="0.50" stroke="#d2e4f6" stroke-width="0.75" stroke-opacity="0.40" />
+    <polygon points="210,30 150,180 260,150" fill="#edf5fc" fill-opacity="0.32" stroke="#edf5fc" stroke-width="0.75" stroke-opacity="0.26" />
+    <polygon points="850,110 750,95 770,215" fill="#97b8e2" fill-opacity="0.70" stroke="#97b8e2" stroke-width="0.75" stroke-opacity="0.56" />
+    <polygon points="850,110 770,215 850,240" fill="#adc8ea" fill-opacity="0.65" stroke="#adc8ea" stroke-width="0.75" stroke-opacity="0.52" />
+    <polygon points="750,95 620,75 660,185" fill="#b8d0ee" fill-opacity="0.60" stroke="#b8d0ee" stroke-width="0.75" stroke-opacity="0.48" />
+    <polygon points="750,95 660,185 770,215" fill="#9fc1e6" fill-opacity="0.75" stroke="#9fc1e6" stroke-width="0.75" stroke-opacity="0.60" />
+    <polygon points="620,75 490,65 530,175" fill="#c5d9f0" fill-opacity="0.55" stroke="#c5d9f0" stroke-width="0.75" stroke-opacity="0.44" />
+    <polygon points="620,75 530,175 660,185" fill="#aecbe9" fill-opacity="0.68" stroke="#aecbe9" stroke-width="0.75" stroke-opacity="0.54" />
+    <polygon points="490,65 370,100 400,195" fill="#d3e4f6" fill-opacity="0.48" stroke="#d3e4f6" stroke-width="0.75" stroke-opacity="0.38" />
+    <polygon points="490,65 400,195 530,175" fill="#bdd5f0" fill-opacity="0.58" stroke="#bdd5f0" stroke-width="0.75" stroke-opacity="0.46" />
+    <polygon points="370,100 260,150 290,250" fill="#deeef9" fill-opacity="0.42" stroke="#deeef9" stroke-width="0.75" stroke-opacity="0.34" />
+    <polygon points="370,100 290,250 400,195" fill="#cbdef4" fill-opacity="0.52" stroke="#cbdef4" stroke-width="0.75" stroke-opacity="0.42" />
+    <polygon points="260,150 150,180 180,290" fill="#e7f2fa" fill-opacity="0.35" stroke="#e7f2fa" stroke-width="0.75" stroke-opacity="0.28" />
+    <polygon points="260,150 180,290 290,250" fill="#d6e7f7" fill-opacity="0.44" stroke="#d6e7f7" stroke-width="0.75" stroke-opacity="0.35" />
+    <polygon points="150,180 90,340 180,290" fill="#eff6fc" fill-opacity="0.28" stroke="#eff6fc" stroke-width="0.75" stroke-opacity="0.22" />
+    <polygon points="850,240 770,215 780,350" fill="#9ebde4" fill-opacity="0.65" stroke="#9ebde4" stroke-width="0.75" stroke-opacity="0.52" />
+    <polygon points="850,240 780,350 850,390" fill="#b3cdea" fill-opacity="0.60" stroke="#b3cdea" stroke-width="0.75" stroke-opacity="0.48" />
+    <polygon points="770,215 660,185 680,320" fill="#89aedb" fill-opacity="0.75" stroke="#89aedb" stroke-width="0.75" stroke-opacity="0.60" />
+    <polygon points="770,215 680,320 780,350" fill="#9cbee3" fill-opacity="0.68" stroke="#9cbee3" stroke-width="0.75" stroke-opacity="0.54" />
+    <polygon points="660,185 530,175 560,310" fill="#b4cdec" fill-opacity="0.58" stroke="#b4cdec" stroke-width="0.75" stroke-opacity="0.46" />
+    <polygon points="660,185 560,310 680,320" fill="#a2c2e7" fill-opacity="0.70" stroke="#a2c2e7" stroke-width="0.75" stroke-opacity="0.56" />
+    <polygon points="530,175 400,195 440,330" fill="#c3d8f1" fill-opacity="0.52" stroke="#c3d8f1" stroke-width="0.75" stroke-opacity="0.42" />
+    <polygon points="530,175 440,330 560,310" fill="#b0cbe9" fill-opacity="0.60" stroke="#b0cbe9" stroke-width="0.75" stroke-opacity="0.48" />
+    <polygon points="400,195 290,250 320,370" fill="#d3e4f6" fill-opacity="0.45" stroke="#d3e4f6" stroke-width="0.75" stroke-opacity="0.36" />
+    <polygon points="400,195 320,370 440,330" fill="#c1d7f0" fill-opacity="0.52" stroke="#c1d7f0" stroke-width="0.75" stroke-opacity="0.42" />
+    <polygon points="290,250 180,290 220,420" fill="#e0eff9" fill-opacity="0.38" stroke="#e0eff9" stroke-width="0.75" stroke-opacity="0.30" />
+    <polygon points="290,250 220,420 320,370" fill="#cfe2f5" fill-opacity="0.44" stroke="#cfe2f5" stroke-width="0.75" stroke-opacity="0.35" />
+    <polygon points="180,290 90,340 130,470" fill="#ebf4fc" fill-opacity="0.28" stroke="#ebf4fc" stroke-width="0.75" stroke-opacity="0.22" />
+    <polygon points="180,290 130,470 220,420" fill="#dbe9f7" fill-opacity="0.35" stroke="#dbe9f7" stroke-width="0.75" stroke-opacity="0.28" />
+    <polygon points="850,390 780,350 790,490" fill="#a6c3e7" fill-opacity="0.58" stroke="#a6c3e7" stroke-width="0.75" stroke-opacity="0.46" />
+    <polygon points="850,390 790,490 850,550" fill="#b8cfea" fill-opacity="0.50" stroke="#b8cfea" stroke-width="0.75" stroke-opacity="0.40" />
+    <polygon points="780,350 680,320 690,450" fill="#90b2de" fill-opacity="0.65" stroke="#90b2de" stroke-width="0.75" stroke-opacity="0.52" />
+    <polygon points="780,350 690,450 790,490" fill="#a0bee4" fill-opacity="0.58" stroke="#a0bee4" stroke-width="0.75" stroke-opacity="0.46" />
+    <polygon points="680,320 560,310 580,440" fill="#abc6e8" fill-opacity="0.52" stroke="#abc6e8" stroke-width="0.75" stroke-opacity="0.42" />
+    <polygon points="680,320 580,440 690,450" fill="#99bce5" fill-opacity="0.62" stroke="#99bce5" stroke-width="0.75" stroke-opacity="0.50" />
+    <polygon points="560,310 440,330 460,460" fill="#bdd4ef" fill-opacity="0.48" stroke="#bdd4ef" stroke-width="0.75" stroke-opacity="0.38" />
+    <polygon points="560,310 460,460 580,440" fill="#acc8ea" fill-opacity="0.55" stroke="#acc8ea" stroke-width="0.75" stroke-opacity="0.44" />
+    <polygon points="440,330 320,370 350,500" fill="#cee1f5" fill-opacity="0.40" stroke="#cee1f5" stroke-width="0.75" stroke-opacity="0.32" />
+    <polygon points="440,330 350,500 460,460" fill="#bcd4f0" fill-opacity="0.48" stroke="#bcd4f0" stroke-width="0.75" stroke-opacity="0.38" />
+    <polygon points="320,370 220,420 250,550" fill="#dbebf7" fill-opacity="0.34" stroke="#dbebf7" stroke-width="0.75" stroke-opacity="0.27" />
+    <polygon points="320,370 250,550 350,500" fill="#cbdef4" fill-opacity="0.38" stroke="#cbdef4" stroke-width="0.75" stroke-opacity="0.30" />
+    <polygon points="850,550 790,490 800,630" fill="#afc8e9" fill-opacity="0.48" stroke="#afc8e9" stroke-width="0.75" stroke-opacity="0.38" />
+    <polygon points="850,550 800,630 850,700" fill="#c0d5ed" fill-opacity="0.40" stroke="#c0d5ed" stroke-width="0.75" stroke-opacity="0.32" />
+    <polygon points="790,490 690,450 710,590" fill="#9bbce3" fill-opacity="0.55" stroke="#9bbce3" stroke-width="0.75" stroke-opacity="0.44" />
+    <polygon points="790,490 710,590 800,630" fill="#a9c5e7" fill-opacity="0.48" stroke="#a9c5e7" stroke-width="0.75" stroke-opacity="0.38" />
+    <polygon points="690,450 580,440 600,575" fill="#a6c3e6" fill-opacity="0.45" stroke="#a6c3e6" stroke-width="0.75" stroke-opacity="0.36" />
+    <polygon points="690,450 600,575 710,590" fill="#97bde3" fill-opacity="0.50" stroke="#97bde3" stroke-width="0.75" stroke-opacity="0.40" />
+    <polygon points="580,440 460,460 490,595" fill="#b8d0ed" fill-opacity="0.38" stroke="#b8d0ed" stroke-width="0.75" stroke-opacity="0.30" />
+    <polygon points="580,440 490,595 600,575" fill="#a8c4e6" fill-opacity="0.42" stroke="#a8c4e6" stroke-width="0.75" stroke-opacity="0.34" />
+    <polygon points="460,460 350,500 390,625" fill="#c7dcf4" fill-opacity="0.30" stroke="#c7dcf4" stroke-width="0.75" stroke-opacity="0.24" />
+    <polygon points="460,460 390,625 490,595" fill="#b9d1ed" fill-opacity="0.34" stroke="#b9d1ed" stroke-width="0.75" stroke-opacity="0.27" />
+  </g>
+</svg>

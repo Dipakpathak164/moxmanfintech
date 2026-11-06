@@ -290,10 +290,21 @@
      paragraphs and illustrated line-art scenes. Large visual bleeding right.
      ========================================================================= -->
 <section id="heroSection" class="relative bg-hero-cream text-neutral-800 overflow-x-clip overflow-y-visible">
-    <img class="hero-dotted-picture" src="./assets/images/heroassets/hero-dotted-pattern.png" alt="" width="787" height="241" aria-hidden="true" loading="eager" decoding="async">
     
     <!-- Pinned Viewport Container for Scroll Story -->
     <div id="heroPinContainer" class="relative z-10 w-full min-h-[100svh] flex flex-col justify-between pt-[104px] sm:pt-[124px] lg:pt-[144px] xl:pt-[150px] bg-hero-cream overflow-hidden">
+        <!-- Decorative abstract image anchored to top-left corner -->
+        <picture class="hero-corner-wave" aria-hidden="true">
+            <source srcset="./assets/images/heroassets/AbstracLavenderDottedWave.webp" type="image/webp">
+            <img 
+                src="./assets/images/heroassets/AbstracLavenderDottedWave.png" 
+                alt="" 
+                width="1774" 
+                height="887" 
+                class="hero-corner-wave-img"
+                decoding="async"
+            >
+        </picture>
         
         <!-- Abstract Flowing Vector Shape (Left Side, Behind Header & Content) -->
         <!-- DEBUG-VIEW START 1 APPPATH/Views/partials/hero-abstract.php -->
@@ -501,44 +512,6 @@
             <img class="hero-floating-object hero-object-cube" src="./assets/images/heroassets/hero-cube.webp" alt="" width="180" height="191" aria-hidden="true" loading="eager" decoding="async">
             <img class="hero-floating-object hero-object-sphere" src="./assets/images/heroassets/hero-sphere.png" alt="" width="182" height="179" aria-hidden="true" loading="eager" decoding="async">
 
-            <!-- Badge 2: Cashless care / Direct Admission (Lower-Mid-Left) -->
-            <div class="claims-badge claims-badge-2 absolute left-0 sm:left-1 bottom-[22%] sm:bottom-[15%] lg:bottom-[23%] hidden lg:block" role="presentation">
-                <div class="claims-badge-inner flex items-start gap-2 sm:gap-3 p-2 sm:p-3.5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/80 shadow-[0_12px_30px_-6px_rgba(61,21,97,0.16),0_4px_12px_-2px_rgba(61,21,97,0.08)] max-w-[155px] min-[390px]:max-w-[175px] sm:max-w-[245px] lg:max-w-[260px]">
-                    <div class="w-6 h-6 sm:w-9 sm:h-9 rounded-xl bg-purple-50 text-logo-purple border border-purple-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg class="w-3.5 h-3.5 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            <path d="M12 8v8"/>
-                            <path d="M8 12h8"/>
-                        </svg>
-                    </div>
-                    <div class="min-w-0">
-                        <span class="block text-[8px] sm:text-[9.5px] font-display font-bold uppercase tracking-wider text-logo-purple">Cashless care</span>
-                        <strong class="block text-[10.5px] sm:text-[13.5px] font-display font-extrabold text-neutral-900 leading-tight mt-0.5">Direct Admission</strong>
-                        <span class="block text-[9px] sm:text-[11px] text-neutral-600 leading-snug mt-0.5 font-medium">Smooth admission without upfront deposits</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Badge 4: Digital reimbursements (Bottom-Right) -->
-            <div class="claims-badge claims-badge-4 absolute right-0 sm:right-1 bottom-8 sm:bottom-12 lg:bottom-10 xl:bottom-12 hidden lg:block" role="presentation">
-                <div class="claims-badge-inner flex items-start gap-2 sm:gap-3 p-2 sm:p-3.5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/80 shadow-[0_12px_30px_-6px_rgba(5,150,105,0.18),0_4px_12px_-2px_rgba(61,21,97,0.08)] max-w-[155px] min-[390px]:max-w-[175px] sm:max-w-[245px] lg:max-w-[260px]">
-                    <div class="w-7 h-7 sm:w-9 sm:h-9 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg class="w-3.5 h-3.5 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                            <path d="M9 7h6"/>
-                            <path d="M9 11h6"/>
-                            <path d="M9 15h4"/>
-                            <circle cx="16" cy="15" r="2" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <div class="min-w-0">
-                        <span class="block text-[8px] sm:text-[9.5px] font-display font-bold uppercase tracking-wider text-emerald-800">Digital reimbursements</span>
-                        <strong class="block text-[10.5px] sm:text-[13.5px] font-display font-extrabold text-neutral-900 leading-tight mt-0.5">Paperless Claims Vault</strong>
-                        <span class="block text-[9px] sm:text-[11px] text-neutral-600 leading-snug mt-0.5 font-medium">Instant digital filing and live status visibility</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div><!-- /heroScene1 -->
 
@@ -672,8 +645,8 @@
             </div>
         </div>
 
-        <!-- Full-Width Bottom Edge Translucent Light Ticker -->
-        <div class="w-full bg-white/80 backdrop-blur-md border-t border-primary-100 py-2.5 sm:py-3 overflow-hidden relative z-20" id="heroNetworkTicker">
+        <!-- Full-Width Bottom Edge Ticker with Benefits Background -->
+        <div class="w-full backdrop-blur-md border-t border-white/10 py-2.5 sm:py-3 overflow-hidden relative z-20" id="heroNetworkTicker" style="background-color: var(--color-benefits-bg, #3d1561);">
             <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
                 
                 <!-- Ticker Header Label Chip (Translucent light surface) -->
@@ -684,7 +657,7 @@
 
                 <!-- Marquee Track Wrapper -->
                 <div class="relative overflow-hidden w-full flex items-center">
-                    <div class="ticker-track flex items-center gap-8 text-[11px] sm:text-caption text-primary-900/85 font-medium">
+                    <div class="ticker-track flex items-center gap-8 text-[11px] sm:text-caption text-white/90 font-medium">
                                                     <span class="inline-flex items-center gap-2 whitespace-nowrap">
                                 <span class="text-accent-600" aria-hidden="true">✦</span>
                                 <span>Group health insurance</span>
@@ -1945,30 +1918,36 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
-            <!-- Left: Dedicated Claims Support Professionals with Purple Swoosh Graphic -->
+            <!-- Left: Dedicated Claims Support Professionals with Cashless Claims Tracking -->
             <div class="order-2 lg:order-1 lg:col-span-7 flex flex-col items-center lg:items-start justify-end relative w-full self-end">
                 <div class="claims-arch-stage select-none" id="claimsArtworkStage" aria-label="Moxman cashless care and dedicated claims support team">
                     <div class="claims-arch-figure">
+                        <!-- Floating decorative animated shapes (reusing hero animation, placed around & behind the visual) -->
+                        <img class="hero-floating-object hero-object-shield" src="./assets/images/heroassets/hero-medical-shield.webp" alt="" width="210" height="240" aria-hidden="true" loading="lazy" decoding="async">
+                        <img class="hero-floating-object hero-object-diamond" src="./assets/images/heroassets/hero-diamond.webp" alt="" width="196" height="191" aria-hidden="true" loading="lazy" decoding="async">
+                        <img class="hero-floating-object hero-object-cube" src="./assets/images/heroassets/hero-cube.webp" alt="" width="180" height="191" aria-hidden="true" loading="lazy" decoding="async">
+                        <img class="hero-floating-object hero-object-sphere" src="./assets/images/heroassets/hero-sphere.png" alt="" width="182" height="179" aria-hidden="true" loading="lazy" decoding="async">
+
                         <picture class="block w-full">
                             <source 
-                                srcset="./assets/images/about/SmilingHealthcareInsuranceProfessionals-640.webp 640w,
-                                        ./assets/images/about/SmilingHealthcareInsuranceProfessionals-960.webp 960w,
-                                        ./assets/images/about/SmilingHealthcareInsuranceProfessionals.webp 1536w"
+                                srcset="./assets/images/about/claims-experience-smarter-health-coverage-640.webp 640w,
+                                        ./assets/images/about/claims-experience-smarter-health-coverage-960.webp 960w,
+                                        ./assets/images/about/claims-experience-smarter-health-coverage.webp 1536w"
                                 sizes="(min-width: 1280px) 620px, (min-width: 1024px) 55vw, (min-width: 640px) 500px, 100vw" 
                                 type="image/webp"
                             >
                             <source 
-                                srcset="./assets/images/about/SmilingHealthcareInsuranceProfessionals-640.png 640w,
-                                        ./assets/images/about/SmilingHealthcareInsuranceProfessionals-960.png 960w,
-                                        ./assets/images/about/SmilingHealthcareInsuranceProfessionals.png 1536w"
+                                srcset="./assets/images/about/claims-experience-smarter-health-coverage-640.png 640w,
+                                        ./assets/images/about/claims-experience-smarter-health-coverage-960.png 960w,
+                                        ./assets/images/about/claims-experience-smarter-health-coverage.png 1536w"
                                 sizes="(min-width: 1280px) 620px, (min-width: 1024px) 55vw, (min-width: 640px) 500px, 100vw" 
                                 type="image/png"
                             >
                             <img 
-                                src="./assets/images/about/SmilingHealthcareInsuranceProfessionals.png" 
-                                alt="Smiling healthcare insurance professionals providing stress-free cashless claims support" 
+                                src="./assets/images/about/claims-experience-smarter-health-coverage.png" 
+                                alt="Two healthcare insurance professionals with a modern hospital and a claims tracking card for cashless health insurance claims" 
                                 width="1536" 
-                                height="1017" 
+                                height="1024" 
                                 class="claims-arch-img"
                                 loading="lazy" 
                                 decoding="async" 
